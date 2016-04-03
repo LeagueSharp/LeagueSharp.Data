@@ -9,7 +9,7 @@
     ///     Gets a list of gapclosers.
     /// </summary>
     [ResourceImport]
-    public class GapcloserData : IDataType
+    public class GapcloserData : DataType<GapcloserData>
     {
         #region Fields
 

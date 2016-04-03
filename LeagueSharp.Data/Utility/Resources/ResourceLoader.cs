@@ -5,6 +5,8 @@
     using System.Linq;
     using System.Reflection;
 
+    using Newtonsoft.Json.Linq;
+
     internal static class ResourceLoader
     {
         #region Public Methods and Operators
@@ -23,7 +25,7 @@
                     {
                         var valueType = member.GetMemberType();
                         var import = member.GetCustomAttribute<ResourceImportAttribute>();
-                        var value = JsonFactory.JsonResource(import.File, valueType);
+                        var value = JsonFactory.JsonResource(import, valueType);
 
                         if (import.Filter != null)
                         {

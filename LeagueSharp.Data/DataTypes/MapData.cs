@@ -9,9 +9,9 @@
     /// <summary>
     ///     Gets data on maps.
     /// </summary>
-    /// <seealso cref="LeagueSharp.Data.IDataType" />
+    /// <seealso cref="DataType{T}" />
     [ResourceImport]
-    public class MapData : IDataType
+    public class MapData : DataType<MapData>
     {
         #region Static Fields
 

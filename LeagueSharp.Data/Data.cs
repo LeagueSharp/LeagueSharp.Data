@@ -2,12 +2,15 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Diagnostics;
     using System.IO;
     using System.Reflection;
     using System.Security.Permissions;
     using System.Text;
 
     using LeagueSharp.Data.Utility.Resources;
+
+    using Newtonsoft.Json.Linq;
 
     public class Data
     {
@@ -16,7 +19,7 @@
         /// <summary>
         ///     The cache
         /// </summary>
-        private static readonly Dictionary<Type, IDataType> Cache = new Dictionary<Type, IDataType>();
+        private static readonly Dictionary<Type, DataType> Cache = new Dictionary<Type, DataType>();
 
         #endregion
 
@@ -68,17 +71,17 @@
         /// <typeparam name="T"></typeparam>
         /// <returns></returns>
         [PermissionSet(SecurityAction.Assert, Unrestricted = true)]
-        public static T Get<T>() where T : IDataType
+        public static T Get<T>() where T : DataType<T>
         {
             try
             {
-                IDataType dataImpl;
+                DataType dataImpl;
                 if (Cache.TryGetValue(typeof(T), out dataImpl))
                 {
                     return (T)dataImpl;
                 }
 
-                dataImpl = (IDataType)Activator.CreateInstance(typeof(T), true);
+                dataImpl = (DataType<T>) Activator.CreateInstance(typeof(T), true);
                 Cache[typeof(T)] = dataImpl;
 
                 return (T)dataImpl;
@@ -93,11 +96,23 @@
         #endregion
     }
 
+    public abstract class DataType
+    {
+        
+    }
+
     /// <summary>
     ///     Represents that a class has data that can be obtained from LeagueSharp.Data
     /// </summary>
-    // TODO: Maybe make this an attribute?
-    public interface IDataType
+    public abstract class DataType<T> : DataType where T : DataType<T> 
     {
+        /// <summary>
+        /// Gets the raw data.
+        /// </summary>
+        /// <returns></returns>
+        public JToken GetRawData()
+        {
+            return typeof(T).GetCustomAttribute<ResourceImportAttribute>().RawData;
+        }
     }
 }

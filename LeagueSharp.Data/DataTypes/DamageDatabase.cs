@@ -15,9 +15,9 @@
     /// <summary>
     ///     Gets damages. Only loads damages for champions in the game.
     /// </summary>
-    /// <seealso cref="LeagueSharp.Data.IDataType" />
+    /// <seealso cref="DataType{T}" />
     [ResourceImport]
-    public class DamageDatabase : IDataType
+    public class DamageDatabase : DataType<DamageDatabase>
     {
         #region Static Fields
 

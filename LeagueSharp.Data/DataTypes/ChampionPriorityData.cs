@@ -4,12 +4,14 @@
 
     using LeagueSharp.Data.Utility.Resources;
 
+    using Newtonsoft.Json.Linq;
+
     /// <summary>
     ///     Gets champion priorities.
     /// </summary>
-    /// <seealso cref="LeagueSharp.Data.IDataType" />
+    /// <seealso cref="DataType{T}" />
     [ResourceImport]
-    public class ChampionPriorityData : IDataType
+    public class ChampionPriorityData : DataType<ChampionPriorityData>
     {
         #region Static Fields
 

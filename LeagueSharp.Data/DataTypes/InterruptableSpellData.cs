@@ -8,9 +8,9 @@
     /// <summary>
     ///     Gets interruptable spells.
     /// </summary>
-    /// <seealso cref="LeagueSharp.Data.IDataType" />
+    /// <seealso cref="DataType{T}" />
     [ResourceImport]
-    public class InterruptableSpellData : IDataType
+    public class InterruptableSpellData : DataType<InterruptableSpellData>
     {
         #region Constructors and Destructors
 

@@ -9,6 +9,7 @@
 
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
+    using Newtonsoft.Json.Linq;
 
     internal static class JsonFactory
     {
@@ -100,17 +101,38 @@
         /// <summary>
         ///     Deserialize Object from Resource
         /// </summary>
-        /// <param name="file"></param>
+        /// <param name="attribute"></param>
         /// <param name="type"></param>
         /// <param name="assembly"></param>
         /// <param name="settings"></param>
         /// <returns></returns>
         [PermissionSet(SecurityAction.Assert, Unrestricted = true)]
         public static object JsonResource(
-            string file,
+            ResourceImportAttribute attribute,
             Type type = null,
             Assembly assembly = null,
             JsonSerializerSettings settings = null)
+        {
+            if (attribute.File == null)
+            {
+                throw new ArgumentNullException(nameof(attribute.File));
+            }
+
+            var stringResource = ResourceFactory.StringResource(attribute.File, assembly);
+            attribute.RawData = JToken.Parse(stringResource);
+            return attribute.RawData.ToObject(type);
+        }
+
+        /// <summary>
+        /// Deserialize Object from Resource
+        /// </summary>
+        /// <param name="file"></param>
+        /// <param name="type"></param>
+        /// <param name="assembly"></param>
+        /// <param name="settings"></param>
+        /// <returns></returns>
+        [PermissionSet(SecurityAction.Assert, Unrestricted = true)]
+        public static object JsonResource(string file, Type type = null, Assembly assembly = null, JsonSerializerSettings settings = null)
         {
             if (file == null)
             {

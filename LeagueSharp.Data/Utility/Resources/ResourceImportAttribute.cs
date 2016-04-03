@@ -2,6 +2,8 @@
 {
     using System;
 
+    using Newtonsoft.Json.Linq;
+
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Field | AttributeTargets.Property)]
     internal class ResourceImportAttribute : Attribute
     {
@@ -48,6 +50,18 @@
         ///     The filter.
         /// </value>
         public Type Filter { get; set; }
+
+        /// <summary>
+        /// Gets or sets the raw data.
+        /// </summary>
+        /// <value>
+        /// The raw data.
+        /// </value>
+        public JToken RawData
+        {
+            get;
+            set;
+        }
 
         #endregion
     }
