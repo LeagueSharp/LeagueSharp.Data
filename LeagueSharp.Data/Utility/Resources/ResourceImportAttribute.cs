@@ -52,16 +52,12 @@
         public Type Filter { get; set; }
 
         /// <summary>
-        /// Gets or sets the raw data.
+        ///     Gets or sets the raw data.
         /// </summary>
         /// <value>
-        /// The raw data.
+        ///     The raw data.
         /// </value>
-        public JToken RawData
-        {
-            get;
-            set;
-        }
+        public JToken RawData { get; set; }
 
         #endregion
     }

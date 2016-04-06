@@ -102,14 +102,16 @@
         ///     Deserialize Object from Resource
         /// </summary>
         /// <param name="attribute"></param>
-        /// <param name="type"></param>
+        /// <param name="jsonType"></param>
         /// <param name="assembly"></param>
         /// <param name="settings"></param>
+        /// <param name="memberType"></param>
         /// <returns></returns>
         [PermissionSet(SecurityAction.Assert, Unrestricted = true)]
         public static object JsonResource(
             ResourceImportAttribute attribute,
-            Type type = null,
+            Type memberType,
+            Type jsonType = null,
             Assembly assembly = null,
             JsonSerializerSettings settings = null)
         {
@@ -119,12 +121,12 @@
             }
 
             var stringResource = ResourceFactory.StringResource(attribute.File, assembly);
-            attribute.RawData = JToken.Parse(stringResource);
-            return attribute.RawData.ToObject(type);
+            memberType.GetCustomAttribute<ResourceImportAttribute>().RawData = JToken.Parse(stringResource);
+            return attribute.RawData.ToObject(jsonType);
         }
 
         /// <summary>
-        /// Deserialize Object from Resource
+        ///     Deserialize Object from Resource
         /// </summary>
         /// <param name="file"></param>
         /// <param name="type"></param>
@@ -132,7 +134,11 @@
         /// <param name="settings"></param>
         /// <returns></returns>
         [PermissionSet(SecurityAction.Assert, Unrestricted = true)]
-        public static object JsonResource(string file, Type type = null, Assembly assembly = null, JsonSerializerSettings settings = null)
+        public static object JsonResource(
+            string file,
+            Type type = null,
+            Assembly assembly = null,
+            JsonSerializerSettings settings = null)
         {
             if (file == null)
             {

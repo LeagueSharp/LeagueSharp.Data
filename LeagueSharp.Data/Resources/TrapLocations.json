@@ -1,0 +1,376 @@
+[
+  {
+    "Locations": [
+      {
+        "X": 2790.0,
+        "Y": 50.16358,
+        "Z": 7278.0,
+        "IsNormalized": false,
+        "IsZero": false
+      },
+      {
+        "X": 3700.708,
+        "Y": -11.22648,
+        "Z": 9294.094,
+        "IsNormalized": false,
+        "IsZero": false
+      },
+      {
+        "X": 2314.0,
+        "Y": 53.165,
+        "Z": 9722.0,
+        "IsNormalized": false,
+        "IsZero": false
+      },
+      {
+        "X": 3090.0,
+        "Y": -68.03732,
+        "Z": 10810.0,
+        "IsNormalized": false,
+        "IsZero": false
+      },
+      {
+        "X": 4722.0,
+        "Y": -71.2406,
+        "Z": 10010.0,
+        "IsNormalized": false,
+        "IsZero": false
+      },
+      {
+        "X": 5208.0,
+        "Y": -71.2406,
+        "Z": 9114.0,
+        "IsNormalized": false,
+        "IsZero": false
+      },
+      {
+        "X": 4724.0,
+        "Y": 52.53909,
+        "Z": 7590.0,
+        "IsNormalized": false,
+        "IsZero": false
+      },
+      {
+        "X": 4564.0,
+        "Y": 51.83786,
+        "Z": 6060.0,
+        "IsNormalized": false,
+        "IsZero": false
+      },
+      {
+        "X": 2760.0,
+        "Y": 52.96445,
+        "Z": 5178.0,
+        "IsNormalized": false,
+        "IsZero": false
+      },
+      {
+        "X": 4440.0,
+        "Y": 56.8484,
+        "Z": 11840.0,
+        "IsNormalized": false,
+        "IsZero": false
+      },
+      {
+        "X": 2420.0,
+        "Y": 52.8381,
+        "Z": 13482.0,
+        "IsNormalized": false,
+        "IsZero": false
+      },
+      {
+        "X": 1630.0,
+        "Y": 52.8381,
+        "Z": 13008.0,
+        "IsNormalized": false,
+        "IsZero": false
+      },
+      {
+        "X": 1172.0,
+        "Y": 52.8381,
+        "Z": 12302.0,
+        "IsNormalized": false,
+        "IsZero": false
+      },
+      {
+        "X": 5666.0,
+        "Y": 52.8381,
+        "Z": 12722.0,
+        "IsNormalized": false,
+        "IsZero": false
+      },
+      {
+        "X": 8004.0,
+        "Y": 56.4768,
+        "Z": 11782.0,
+        "IsNormalized": false,
+        "IsZero": false
+      },
+      {
+        "X": 9194.0,
+        "Y": 53.35013,
+        "Z": 11368.0,
+        "IsNormalized": false,
+        "IsZero": false
+      },
+      {
+        "X": 8280.0,
+        "Y": 50.06194,
+        "Z": 10254.0,
+        "IsNormalized": false,
+        "IsZero": false
+      },
+      {
+        "X": 6728.0,
+        "Y": 53.82967,
+        "Z": 11450.0,
+        "IsNormalized": false,
+        "IsZero": false
+      },
+      {
+        "X": 6242.0,
+        "Y": 54.09851,
+        "Z": 10270.0,
+        "IsNormalized": false,
+        "IsZero": false
+      },
+      {
+        "X": 6484.0,
+        "Y": -71.2406,
+        "Z": 8380.0,
+        "IsNormalized": false,
+        "IsZero": false
+      },
+      {
+        "X": 8380.0,
+        "Y": -71.2406,
+        "Z": 6502.0,
+        "IsNormalized": false,
+        "IsZero": false
+      },
+      {
+        "X": 9099.75,
+        "Y": 52.95337,
+        "Z": 7376.637,
+        "IsNormalized": false,
+        "IsZero": false
+      },
+      {
+        "X": 7376.0,
+        "Y": 52.8726,
+        "Z": 8802.0,
+        "IsNormalized": false,
+        "IsZero": false
+      },
+      {
+        "X": 7602.0,
+        "Y": 52.56985,
+        "Z": 5928.0,
+        "IsNormalized": false,
+        "IsZero": false
+      },
+      {
+        "X": 9372.0,
+        "Y": -71.2406,
+        "Z": 5674.0,
+        "IsNormalized": false,
+        "IsZero": false
+      },
+      {
+        "X": 10148.0,
+        "Y": -71.2406,
+        "Z": 4801.525,
+        "IsNormalized": false,
+        "IsZero": false
+      },
+      {
+        "X": 9772.0,
+        "Y": 9.031885,
+        "Z": 6458.0,
+        "IsNormalized": false,
+        "IsZero": false
+      },
+      {
+        "X": 9938.0,
+        "Y": 51.62378,
+        "Z": 7900.0,
+        "IsNormalized": false,
+        "IsZero": false
+      },
+      {
+        "X": 11465.0,
+        "Y": 51.72557,
+        "Z": 7157.772,
+        "IsNormalized": false,
+        "IsZero": false
+      },
+      {
+        "X": 12481.0,
+        "Y": 51.7294,
+        "Z": 5232.559,
+        "IsNormalized": false,
+        "IsZero": false
+      },
+      {
+        "X": 11266.0,
+        "Y": -7.897567,
+        "Z": 5542.0,
+        "IsNormalized": false,
+        "IsZero": false
+      },
+      {
+        "X": 11290.0,
+        "Y": 64.39886,
+        "Z": 8694.0,
+        "IsNormalized": false,
+        "IsZero": false
+      },
+      {
+        "X": 12676.0,
+        "Y": 51.6851,
+        "Z": 7310.818,
+        "IsNormalized": false,
+        "IsZero": false
+      },
+      {
+        "X": 12022.0,
+        "Y": 9154.0,
+        "Z": 51.25105,
+        "IsNormalized": false,
+        "IsZero": false
+      },
+      {
+        "X": 6544.0,
+        "Y": 48.257,
+        "Z": 4732.0,
+        "IsNormalized": false,
+        "IsZero": false
+      },
+      {
+        "X": 5576.0,
+        "Y": 51.42581,
+        "Z": 3512.0,
+        "IsNormalized": false,
+        "IsZero": false
+      },
+      {
+        "X": 6888.0,
+        "Y": 51.94016,
+        "Z": 3082.0,
+        "IsNormalized": false,
+        "IsZero": false
+      },
+      {
+        "X": 8070.0,
+        "Y": 51.5508,
+        "Z": 3472.0,
+        "IsNormalized": false,
+        "IsZero": false
+      },
+      {
+        "X": 8594.0,
+        "Y": 51.73177,
+        "Z": 4668.0,
+        "IsNormalized": false,
+        "IsZero": false
+      },
+      {
+        "X": 10388.0,
+        "Y": 49.81641,
+        "Z": 3046.0,
+        "IsNormalized": false,
+        "IsZero": false
+      },
+      {
+        "X": 9160.0,
+        "Y": 59.97022,
+        "Z": 2122.0,
+        "IsNormalized": false,
+        "IsZero": false
+      },
+      {
+        "X": 12518.0,
+        "Y": 53.66707,
+        "Z": 1504.0,
+        "IsNormalized": false,
+        "IsZero": false
+      },
+      {
+        "X": 13404.0,
+        "Y": 51.3669,
+        "Z": 2482.0,
+        "IsNormalized": false,
+        "IsZero": false
+      },
+      {
+        "X": 11854.0,
+        "Y": -68.06037,
+        "Z": 3922.0,
+        "IsNormalized": false,
+        "IsZero": false
+      }
+    ],
+    "MapId": 12
+  },
+  {
+    "Locations": [
+      {
+        "X": 4787.0,
+        "Y": -178.3095,
+        "Z": 3909.0,
+        "IsNormalized": false,
+        "IsZero": false
+      },
+      {
+        "X": 4107.0,
+        "Y": -178.3095,
+        "Z": 5175.0,
+        "IsNormalized": false,
+        "IsZero": false
+      },
+      {
+        "X": 5927.0,
+        "Y": -178.3095,
+        "Z": 5197.0,
+        "IsNormalized": false,
+        "IsZero": false
+      },
+      {
+        "X": 5633.0,
+        "Y": -178.3095,
+        "Z": 6390.0,
+        "IsNormalized": false,
+        "IsZero": false
+      },
+      {
+        "X": 8921.0,
+        "Y": -178.3095,
+        "Z": 7873.0,
+        "IsNormalized": false,
+        "IsZero": false
+      },
+      {
+        "X": 7555.0,
+        "Y": -178.3095,
+        "Z": 6755.0,
+        "IsNormalized": false,
+        "IsZero": false
+      },
+      {
+        "X": 7677.0,
+        "Y": -178.3095,
+        "Z": 8643.0,
+        "IsNormalized": false,
+        "IsZero": false
+      },
+      {
+        "X": 6487.0,
+        "Y": -178.3095,
+        "Z": 7145.0,
+        "IsNormalized": false,
+        "IsZero": false
+      }
+    ],
+    "MapId": 0
+  }
+]

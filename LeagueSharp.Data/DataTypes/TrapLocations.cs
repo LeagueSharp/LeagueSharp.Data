@@ -1,0 +1,94 @@
+﻿namespace LeagueSharp.Data.DataTypes
+{
+    using System.Collections.Generic;
+    using System.Linq;
+
+    using LeagueSharp.Data.Utility.Resources;
+
+    using SharpDX;
+
+    [ResourceImport]
+    public class TrapLocationData : DataType<TrapLocationData>
+    {
+        #region Static Fields
+
+        /// <summary>
+        ///     The trap locations data
+        /// </summary>
+        [ResourceImport("TrapLocations.json")]
+        private static List<TrapLocationEntry> TrapLocationsData = new List<TrapLocationEntry>();
+
+        #endregion
+
+        #region Public Properties
+
+        /// <summary>
+        ///     Gets the trap locations.
+        /// </summary>
+        /// <value>
+        ///     The trap locations.
+        /// </value>
+        public IReadOnlyList<TrapLocationEntry> TrapLocations => TrapLocationsData;
+
+        #endregion
+
+        #region Public Indexers
+
+        /// <summary>
+        ///     Gets the <see cref="List{Vector3}" /> with the specified map identifier.
+        /// </summary>
+        /// <value>
+        ///     The <see cref="List{Vector3}" />.
+        /// </value>
+        /// <param name="mapId">The map identifier.</param>
+        /// <returns></returns>
+        public List<Vector3> this[int mapId]
+        {
+            get
+            {
+                return this.TrapLocations.FirstOrDefault(x => x.MapId == (int)Game.MapId)?.Locations;
+            }
+        }
+
+        #endregion
+
+        #region Public Methods and Operators
+
+        /// <summary>
+        ///     Gets the locations of traps for the current map.
+        /// </summary>
+        /// <returns></returns>
+        public List<Vector3> GetLocations()
+        {
+            return this.TrapLocations.FirstOrDefault(x => x.MapId == (int)Game.MapId)?.Locations;
+        }
+
+        #endregion
+    }
+
+    /// <summary>
+    ///     JSON Wrapper for trap locations.
+    /// </summary>
+    public class TrapLocationEntry
+    {
+        #region Public Properties
+
+        /// <summary>
+        ///     Gets or sets the locations to put traps.
+        /// </summary>
+        /// <value>
+        ///     The locations to put traps.
+        /// </value>
+        public List<Vector3> Locations { get; set; } = new List<Vector3>();
+
+        /// <summary>
+        ///     Gets or sets the map identifier.
+        /// </summary>
+        /// <value>
+        ///     The map identifier.
+        /// </value>
+        public int MapId { get; set; }
+
+        #endregion
+    }
+}

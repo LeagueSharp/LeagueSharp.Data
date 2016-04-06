@@ -4,8 +4,6 @@
 
     using LeagueSharp.Data.Utility.Resources;
 
-    using Newtonsoft.Json.Linq;
-
     /// <summary>
     ///     Gets champion priorities.
     /// </summary>

@@ -2,7 +2,6 @@
 {
     using System;
     using System.Collections.Generic;
-    using System.Diagnostics;
     using System.IO;
     using System.Reflection;
     using System.Security.Permissions;
@@ -42,13 +41,10 @@
                 {
                     sb.AppendLine(exSub.Message);
                     var exFileNotFound = exSub as FileNotFoundException;
-                    if (exFileNotFound != null)
+                    if (!string.IsNullOrEmpty(exFileNotFound?.FusionLog))
                     {
-                        if (!string.IsNullOrEmpty(exFileNotFound.FusionLog))
-                        {
-                            sb.AppendLine("Fusion Log:");
-                            sb.AppendLine(exFileNotFound.FusionLog);
-                        }
+                        sb.AppendLine("Fusion Log:");
+                        sb.AppendLine(exFileNotFound.FusionLog);
                     }
                     sb.AppendLine();
                 }
@@ -81,7 +77,7 @@
                     return (T)dataImpl;
                 }
 
-                dataImpl = (DataType<T>) Activator.CreateInstance(typeof(T), true);
+                dataImpl = (DataType<T>)Activator.CreateInstance(typeof(T), true);
                 Cache[typeof(T)] = dataImpl;
 
                 return (T)dataImpl;
@@ -98,21 +94,25 @@
 
     public abstract class DataType
     {
-        
     }
 
     /// <summary>
     ///     Represents that a class has data that can be obtained from LeagueSharp.Data
     /// </summary>
-    public abstract class DataType<T> : DataType where T : DataType<T> 
+    public abstract class DataType<T> : DataType
+        where T : DataType<T>
     {
+        #region Public Methods and Operators
+
         /// <summary>
-        /// Gets the raw data.
+        ///     Gets the raw data.
         /// </summary>
         /// <returns></returns>
         public JToken GetRawData()
         {
             return typeof(T).GetCustomAttribute<ResourceImportAttribute>().RawData;
         }
+
+        #endregion
     }
 }

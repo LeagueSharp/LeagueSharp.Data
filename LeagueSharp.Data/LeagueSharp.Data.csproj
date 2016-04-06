@@ -82,6 +82,7 @@
     <Compile Include="DataTypes\InterruptableSpellData.cs" />
     <Compile Include="DataTypes\MapData.cs" />
     <Compile Include="DataTypes\SpellDatabase.cs" />
+    <Compile Include="DataTypes\TrapLocations.cs" />
     <Compile Include="Enumerations\CastType.cs" />
     <Compile Include="Enumerations\CollisionableObjects.cs" />
     <Compile Include="Enumerations\DamageScalingTarget.cs" />
@@ -114,6 +115,7 @@
     <EmbeddedResource Include="Resources\InterruptableSpells.json" />
     <EmbeddedResource Include="Resources\Map.json" />
     <EmbeddedResource Include="Resources\Priority.json" />
+    <EmbeddedResource Include="Resources\TrapLocations.json" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
