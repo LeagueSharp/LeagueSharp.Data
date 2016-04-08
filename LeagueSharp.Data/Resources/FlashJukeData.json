@@ -1,0 +1,2785 @@
+[
+  {
+    "Start": {
+      "X": 956.6833,
+      "Y": 2646.205,
+      "Z": 95.74805,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 1322.899,
+      "Y": 2485.314,
+      "Z": 95.74795,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 1322.899,
+      "Y": 2485.314,
+      "Z": 95.74795,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 2420.0,
+      "Y": 6132.0,
+      "Z": 57.02493,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 1724.0,
+      "Y": 6158.0,
+      "Z": 52.94329,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 2020.505,
+      "Y": 6151.897,
+      "Z": 54.1672,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 2424.0,
+      "Y": 6508.0,
+      "Z": 57.00919,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 1774.0,
+      "Y": 6808.0,
+      "Z": 52.8381,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 2053.894,
+      "Y": 6659.709,
+      "Z": 54.59755,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 2474.0,
+      "Y": 6908.0,
+      "Z": 53.3024,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 1774.0,
+      "Y": 6908.0,
+      "Z": 52.8381,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 2075.389,
+      "Y": 6874.696,
+      "Z": 53.04325,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 1774.0,
+      "Y": 6840.0,
+      "Z": 52.8381,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 2324.0,
+      "Y": 7258.0,
+      "Z": 50.04041,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 2147.165,
+      "Y": 6984.034,
+      "Z": 51.38979,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 1724.0,
+      "Y": 6508.0,
+      "Z": 52.83856,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 2424.0,
+      "Y": 6408.0,
+      "Z": 57.01263,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 2111.575,
+      "Y": 6409.104,
+      "Z": 55.07844,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 1736.0,
+      "Y": 6050.0,
+      "Z": 53.60318,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 2424.0,
+      "Y": 6058.0,
+      "Z": 57.02872,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 2135.232,
+      "Y": 6074.711,
+      "Z": 55.44485,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 4224.0,
+      "Y": 5808.0,
+      "Z": 52.50096,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 4374.0,
+      "Y": 5258.0,
+      "Z": 50.23714,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 4213.235,
+      "Y": 5408.148,
+      "Z": 50.86628,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 3574.0,
+      "Y": 5908.0,
+      "Z": 52.48913,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 3274.0,
+      "Y": 5358.0,
+      "Z": 53.73761,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 3365.84,
+      "Y": 5566.432,
+      "Z": 53.22365,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 3924.0,
+      "Y": 5808.0,
+      "Z": 52.504,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 3724.0,
+      "Y": 5208.0,
+      "Z": 52.41418,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 3844.622,
+      "Y": 5415.955,
+      "Z": 52.30323,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 4372.0,
+      "Y": 5248.0,
+      "Z": 50.23569,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 4224.0,
+      "Y": 5808.0,
+      "Z": 52.50095,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 4268.507,
+      "Y": 5634.377,
+      "Z": 51.69048,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 3268.0,
+      "Y": 5356.0,
+      "Z": 53.72001,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 3574.0,
+      "Y": 5908.0,
+      "Z": 52.48915,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 3480.606,
+      "Y": 5694.818,
+      "Z": 52.75827,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 3704.0,
+      "Y": 5196.0,
+      "Z": 52.574,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 3924.0,
+      "Y": 5808.0,
+      "Z": 52.50471,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 3931.44,
+      "Y": 5525.045,
+      "Z": 52.53111,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 4910.0,
+      "Y": 6924.0,
+      "Z": 50.63771,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 5524.0,
+      "Y": 6408.0,
+      "Z": 51.59957,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 5253.552,
+      "Y": 6719.131,
+      "Z": 51.26581,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 6340.0,
+      "Y": 5230.0,
+      "Z": 48.52725,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 6624.0,
+      "Y": 4808.0,
+      "Z": 48.527,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 6600.306,
+      "Y": 4926.288,
+      "Z": 48.52702,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 7472.0,
+      "Y": 3366.0,
+      "Z": 52.58096,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 7860.603,
+      "Y": 3460.804,
+      "Z": 51.89844,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 7860.603,
+      "Y": 3460.804,
+      "Z": 51.89844,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 7506.0,
+      "Y": 3270.0,
+      "Z": 52.58354,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 7128.158,
+      "Y": 3138.717,
+      "Z": 52.57823,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 7128.158,
+      "Y": 3138.717,
+      "Z": 52.57823,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 7422.0,
+      "Y": 2308.0,
+      "Z": 51.75258,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 7224.0,
+      "Y": 1708.0,
+      "Z": 49.44692,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 7228.897,
+      "Y": 1957.705,
+      "Z": 49.62641,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 8272.0,
+      "Y": 2908.0,
+      "Z": 51.13,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 7622.0,
+      "Y": 2858.0,
+      "Z": 52.53639,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 7895.015,
+      "Y": 2774.28,
+      "Z": 52.13895,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 8572.0,
+      "Y": 2908.0,
+      "Z": 51.07707,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 9222.0,
+      "Y": 2758.0,
+      "Z": 49.22295,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 8959.891,
+      "Y": 3005.656,
+      "Z": 53.16409,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 9508.0,
+      "Y": 2712.0,
+      "Z": 49.22297,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 9422.0,
+      "Y": 2258.0,
+      "Z": 54.32547,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 9459.178,
+      "Y": 2315.042,
+      "Z": 55.64545,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 10972.0,
+      "Y": 2508.0,
+      "Z": 49.2229,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 11572.0,
+      "Y": 2958.0,
+      "Z": -60.02427,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 11313.07,
+      "Y": 2712.094,
+      "Z": 4.298306,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 11040.0,
+      "Y": 2296.0,
+      "Z": 49.2229,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 11672.0,
+      "Y": 2308.0,
+      "Z": 50.41902,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 11354.91,
+      "Y": 2538.93,
+      "Z": 6.603291,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 11472.0,
+      "Y": 3058.0,
+      "Z": -68.70793,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 10972.0,
+      "Y": 2508.0,
+      "Z": 49.2229,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 11238.95,
+      "Y": 2740.554,
+      "Z": 1.38604,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 11672.0,
+      "Y": 2358.0,
+      "Z": 50.53391,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 11022.0,
+      "Y": 2408.0,
+      "Z": 49.2229,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 11275.71,
+      "Y": 2412.378,
+      "Z": 49.72529,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 11972.0,
+      "Y": 3908.0,
+      "Z": -66.28026,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 12372.0,
+      "Y": 4508.0,
+      "Z": 51.7294,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 12254.91,
+      "Y": 4183.016,
+      "Z": -0.4985962,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 12222.0,
+      "Y": 4558.0,
+      "Z": 51.7294,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 11922.0,
+      "Y": 4158.0,
+      "Z": -71.2406,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 12212.1,
+      "Y": 4166.981,
+      "Z": -31.97156,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 12422.0,
+      "Y": 4508.0,
+      "Z": 51.7294,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 13072.0,
+      "Y": 4258.0,
+      "Z": 51.43146,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 12749.31,
+      "Y": 4278.073,
+      "Z": 51.51523,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 11930.0,
+      "Y": 4838.0,
+      "Z": 51.7294,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 12272.0,
+      "Y": 5158.0,
+      "Z": 51.7294,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 12199.78,
+      "Y": 5133.326,
+      "Z": 51.72938,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 11022.0,
+      "Y": 6358.0,
+      "Z": 51.27539,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 10472.0,
+      "Y": 5858.0,
+      "Z": -71.2406,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 10712.71,
+      "Y": 6118.737,
+      "Z": -32.93628,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 10370.0,
+      "Y": 6724.0,
+      "Z": 51.98075,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 9995.37,
+      "Y": 6584.541,
+      "Z": 37.72188,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 9995.37,
+      "Y": 6584.541,
+      "Z": 37.72188,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 10336.0,
+      "Y": 7432.0,
+      "Z": 51.83269,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 10080.67,
+      "Y": 7739.909,
+      "Z": 51.75459,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 10080.67,
+      "Y": 7739.909,
+      "Z": 51.75459,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 9858.0,
+      "Y": 8090.0,
+      "Z": 52.35648,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 9372.0,
+      "Y": 8606.0,
+      "Z": 51.899,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 9585.739,
+      "Y": 8383.042,
+      "Z": 51.83698,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 8516.0,
+      "Y": 9690.0,
+      "Z": 50.38408,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 8322.0,
+      "Y": 10106.0,
+      "Z": 50.3338,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 8245.71,
+      "Y": 9984.86,
+      "Z": 49.66603,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 7444.0,
+      "Y": 11520.0,
+      "Z": 53.6413,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 7069.679,
+      "Y": 11378.99,
+      "Z": 54.1552,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 7069.679,
+      "Y": 11378.99,
+      "Z": 54.1552,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 7340.0,
+      "Y": 11610.0,
+      "Z": 49.9489,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 7719.715,
+      "Y": 11735.68,
+      "Z": 54.48843,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 7719.715,
+      "Y": 11735.68,
+      "Z": 54.48843,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 6574.0,
+      "Y": 12056.0,
+      "Z": 56.4768,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 7174.0,
+      "Y": 12306.0,
+      "Z": 54.76827,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 6959.226,
+      "Y": 12163.71,
+      "Z": 56.4768,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 6324.0,
+      "Y": 12006.0,
+      "Z": 56.4768,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 5774.0,
+      "Y": 12206.0,
+      "Z": 56.37742,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 5925.074,
+      "Y": 11976.76,
+      "Z": 58.1337,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 5244.0,
+      "Y": 12202.0,
+      "Z": 56.4768,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 5424.0,
+      "Y": 12606.0,
+      "Z": 52.8381,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 5358.162,
+      "Y": 12585.36,
+      "Z": 54.25264,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 4024.0,
+      "Y": 12206.0,
+      "Z": 56.4768,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 3474.0,
+      "Y": 11756.0,
+      "Z": -62.06449,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 3693.211,
+      "Y": 11990.73,
+      "Z": -8.615967,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 3498.0,
+      "Y": 11766.0,
+      "Z": -62.12,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 3974.0,
+      "Y": 12256.0,
+      "Z": 56.4768,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 3750.298,
+      "Y": 12061.42,
+      "Z": 33.14037,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 3124.0,
+      "Y": 12056.0,
+      "Z": -3.842518,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 3774.0,
+      "Y": 12556.0,
+      "Z": 56.4768,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 3449.949,
+      "Y": 12286.07,
+      "Z": 24.87287,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 3806.0,
+      "Y": 12472.0,
+      "Z": 56.4768,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 3174.0,
+      "Y": 12006.0,
+      "Z": -23.74425,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 3441.063,
+      "Y": 12309.82,
+      "Z": 33.69077,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 2402.0,
+      "Y": 10412.0,
+      "Z": 54.3255,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 1774.0,
+      "Y": 10656.0,
+      "Z": 52.8381,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 2085.936,
+      "Y": 10657.16,
+      "Z": 53.42793,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 2774.0,
+      "Y": 10406.0,
+      "Z": 54.3255,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 2974.0,
+      "Y": 10906.0,
+      "Z": -70.75439,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 2840.656,
+      "Y": 10793.31,
+      "Z": -20.13541,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 2970.0,
+      "Y": 9970.0,
+      "Z": 53.77024,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 2574.0,
+      "Y": 9756.0,
+      "Z": 54.3255,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 2648.805,
+      "Y": 9731.602,
+      "Z": 54.25334,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 3796.0,
+      "Y": 8584.0,
+      "Z": 50.61792,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 4374.0,
+      "Y": 9056.0,
+      "Z": -66.04797,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 4105.992,
+      "Y": 8825.705,
+      "Z": -23.4319,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 4374.0,
+      "Y": 7456.0,
+      "Z": 50.21755,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 4699.406,
+      "Y": 7223.383,
+      "Z": 50.64851,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 4699.406,
+      "Y": 7223.383,
+      "Z": 50.64851,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 3128.0,
+      "Y": 8224.0,
+      "Z": 51.79534,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 3257.462,
+      "Y": 7845.53,
+      "Z": 51.69088,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 3257.462,
+      "Y": 7845.53,
+      "Z": 51.69088,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 3942.0,
+      "Y": 7738.0,
+      "Z": 51.87905,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 3542.0,
+      "Y": 7738.129,
+      "Z": 52.37252,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 3542.0,
+      "Y": 7738.129,
+      "Z": 52.37252,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 2970.0,
+      "Y": 10946.0,
+      "Z": -71.2379,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 2774.0,
+      "Y": 10406.0,
+      "Z": 54.3255,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 2760.656,
+      "Y": 10620.3,
+      "Z": 29.24263,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 6224.0,
+      "Y": 8106.0,
+      "Z": -67.3774,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 5924.0,
+      "Y": 7656.0,
+      "Z": 51.65455,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 6031.075,
+      "Y": 7770.117,
+      "Z": 32.43635,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 5506.0,
+      "Y": 8490.0,
+      "Z": -71.2406,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 5474.0,
+      "Y": 7906.0,
+      "Z": 51.67511,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 5484.033,
+      "Y": 8100.012,
+      "Z": 14.93813,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 5626.0,
+      "Y": 9482.0,
+      "Z": -71.2406,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 5354.457,
+      "Y": 9188.292,
+      "Z": -71.24049,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 5354.457,
+      "Y": 9188.292,
+      "Z": -71.24049,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 5928.0,
+      "Y": 7650.0,
+      "Z": 51.65454,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 6274.0,
+      "Y": 8056.0,
+      "Z": -67.03541,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 6160.292,
+      "Y": 7968.275,
+      "Z": -17.2006,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 5462.0,
+      "Y": 7898.0,
+      "Z": 51.67579,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 5524.0,
+      "Y": 8506.0,
+      "Z": -71.2406,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 5396.459,
+      "Y": 8287.721,
+      "Z": -10.14526,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 9028.0,
+      "Y": 5438.0,
+      "Z": -71.2406,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 9371.965,
+      "Y": 5642.177,
+      "Z": -71.2406,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 9371.965,
+      "Y": 5642.177,
+      "Z": -71.2406,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 9272.0,
+      "Y": 6408.0,
+      "Z": -71.2406,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 9522.0,
+      "Y": 6958.0,
+      "Z": 52.29671,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 9433.435,
+      "Y": 6756.245,
+      "Z": 41.29436,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 8772.0,
+      "Y": 6708.0,
+      "Z": -71.2406,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 9122.0,
+      "Y": 7108.0,
+      "Z": 53.03516,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 9008.457,
+      "Y": 7014.54,
+      "Z": 29.36414,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 9122.0,
+      "Y": 7108.0,
+      "Z": 53.03612,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 8772.0,
+      "Y": 6708.0,
+      "Z": -71.2406,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 8863.602,
+      "Y": 6821.46,
+      "Z": -52.43877,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 9522.0,
+      "Y": 6956.0,
+      "Z": 52.31181,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 9272.0,
+      "Y": 6408.0,
+      "Z": -71.2406,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 9361.282,
+      "Y": 6599.546,
+      "Z": -32.0097,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 10936.0,
+      "Y": 7180.0,
+      "Z": 51.72334,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 11335.86,
+      "Y": 7169.456,
+      "Z": 51.72509,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 11335.86,
+      "Y": 7169.456,
+      "Z": 51.72509,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 8922.0,
+      "Y": 4958.0,
+      "Z": 51.59026,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 8669.179,
+      "Y": 4648.03,
+      "Z": 51.95475,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 8669.179,
+      "Y": 4648.03,
+      "Z": 51.95475,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 9022.0,
+      "Y": 4358.0,
+      "Z": 52.85026,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 8660.763,
+      "Y": 4529.772,
+      "Z": 51.52179,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 8660.763,
+      "Y": 4529.772,
+      "Z": 51.52179,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 5954.0,
+      "Y": 9868.0,
+      "Z": 52.91689,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 6284.438,
+      "Y": 10093.41,
+      "Z": 53.34819,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 6284.438,
+      "Y": 10093.41,
+      "Z": 53.34819,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 5824.0,
+      "Y": 10306.0,
+      "Z": 54.51609,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 6223.998,
+      "Y": 10305.73,
+      "Z": 53.37901,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 6223.998,
+      "Y": 10305.73,
+      "Z": 53.37901,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 6606.0,
+      "Y": 11744.0,
+      "Z": 53.83185,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 6724.0,
+      "Y": 11406.0,
+      "Z": 53.82968,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 6719.207,
+      "Y": 11360.35,
+      "Z": 53.78794,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 6292.0,
+      "Y": 10224.0,
+      "Z": 53.74763,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 6824.0,
+      "Y": 10656.0,
+      "Z": 55.9997,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 6610.332,
+      "Y": 10466.2,
+      "Z": 55.51226,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 8628.0,
+      "Y": 4596.0,
+      "Z": 51.8604,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 8022.0,
+      "Y": 4258.0,
+      "Z": 53.7207,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 8274.423,
+      "Y": 4408.967,
+      "Z": 53.14166,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 8472.0,
+      "Y": 3258.0,
+      "Z": 53.41605,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 8172.0,
+      "Y": 3508.0,
+      "Z": 51.74901,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 8188.322,
+      "Y": 3540.002,
+      "Z": 51.98015,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 6040.0,
+      "Y": 4548.0,
+      "Z": 48.53369,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 6439.99,
+      "Y": 4550.846,
+      "Z": 48.52854,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 6439.99,
+      "Y": 4550.846,
+      "Z": 48.52854,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 6240.0,
+      "Y": 3332.0,
+      "Z": 50.24102,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 6592.858,
+      "Y": 3143.609,
+      "Z": 50.18488,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 6592.858,
+      "Y": 3143.609,
+      "Z": 50.18488,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 6180.0,
+      "Y": 3382.0,
+      "Z": 50.39332,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 5814.911,
+      "Y": 3545.429,
+      "Z": 51.15898,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 5814.911,
+      "Y": 3545.429,
+      "Z": 51.15898,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 11018.34,
+      "Y": 6895.186,
+      "Z": 51.72306,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 11366.39,
+      "Y": 7092.312,
+      "Z": 51.72422,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 11366.39,
+      "Y": 7092.312,
+      "Z": 51.72422,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 12422.0,
+      "Y": 8706.0,
+      "Z": 52.1927,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 13122.0,
+      "Y": 8706.0,
+      "Z": 52.3063,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 12817.9,
+      "Y": 8763.115,
+      "Z": 52.24541,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 12396.0,
+      "Y": 8094.0,
+      "Z": 52.1471,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 13072.0,
+      "Y": 7956.0,
+      "Z": 52.3063,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 12795.44,
+      "Y": 8115.19,
+      "Z": 52.24578,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 13056.0,
+      "Y": 7938.0,
+      "Z": 52.3063,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 12372.0,
+      "Y": 8106.0,
+      "Z": 52.18473,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 12685.63,
+      "Y": 8089.073,
+      "Z": 52.31953,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 13104.0,
+      "Y": 8700.0,
+      "Z": 51.98204,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 12422.0,
+      "Y": 8706.0,
+      "Z": 51.6209,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 12704.94,
+      "Y": 8672.57,
+      "Z": 52.01126,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 11472.0,
+      "Y": 9606.0,
+      "Z": 52.3063,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 11272.0,
+      "Y": 9006.0,
+      "Z": 67.01875,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 11432.66,
+      "Y": 9208.081,
+      "Z": 62.92871,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 11022.0,
+      "Y": 9756.0,
+      "Z": 52.3063,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 10922.0,
+      "Y": 9156.0,
+      "Z": 66.42325,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 10922.55,
+      "Y": 9368.732,
+      "Z": 63.89262,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 10572.0,
+      "Y": 9756.0,
+      "Z": 52.3063,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 10622.0,
+      "Y": 9206.0,
+      "Z": 65.76476,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 10608.86,
+      "Y": 9357.775,
+      "Z": 59.93228,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 10628.0,
+      "Y": 9186.0,
+      "Z": 64.91545,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 10572.0,
+      "Y": 9756.0,
+      "Z": 52.3063,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 10607.78,
+      "Y": 9585.422,
+      "Z": 57.58028,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 10934.0,
+      "Y": 9118.0,
+      "Z": 66.11456,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 11072.0,
+      "Y": 9706.0,
+      "Z": 52.3063,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 10964.9,
+      "Y": 9516.711,
+      "Z": 57.4443,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 11290.0,
+      "Y": 9008.0,
+      "Z": 67.02673,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 11522.0,
+      "Y": 9556.0,
+      "Z": 52.3063,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 11404.87,
+      "Y": 9391.033,
+      "Z": 57.49783,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 8772.0,
+      "Y": 10324.0,
+      "Z": 50.48529,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 8376.394,
+      "Y": 10383.13,
+      "Z": 50.37312,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 8376.394,
+      "Y": 10383.13,
+      "Z": 50.37312,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 8622.0,
+      "Y": 11236.0,
+      "Z": 51.36238,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 8993.561,
+      "Y": 11384.12,
+      "Z": 53.36196,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 8993.561,
+      "Y": 11384.12,
+      "Z": 53.36196,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 7496.0,
+      "Y": 12572.0,
+      "Z": 56.4768,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 7722.0,
+      "Y": 13206.0,
+      "Z": 52.8381,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 7709.668,
+      "Y": 12910.14,
+      "Z": 54.34048,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 10482.0,
+      "Y": 3628.0,
+      "Z": 47.55863,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 10272.0,
+      "Y": 4108.0,
+      "Z": -71.2406,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 10396.63,
+      "Y": 4009.266,
+      "Z": -38.15991,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 3846.0,
+      "Y": 10828.0,
+      "Z": -71.22473,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 4474.0,
+      "Y": 10606.0,
+      "Z": -71.2406,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 4239.508,
+      "Y": 10756.22,
+      "Z": -71.2343,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 4424.0,
+      "Y": 11306.0,
+      "Z": 49.04849,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 4624.0,
+      "Y": 10756.0,
+      "Z": -71.2406,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 4490.276,
+      "Y": 10922.25,
+      "Z": -42.27382,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 5524.0,
+      "Y": 9506.0,
+      "Z": -71.2406,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 5274.0,
+      "Y": 10106.0,
+      "Z": -71.2406,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 5481.263,
+      "Y": 9903.711,
+      "Z": -71.2406,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 4492.0,
+      "Y": 8122.0,
+      "Z": 48.91035,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 4835.491,
+      "Y": 8324.963,
+      "Z": 20.27289,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 4835.491,
+      "Y": 8324.963,
+      "Z": 20.27289,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 3846.777,
+      "Y": 8089.252,
+      "Z": 51.37996,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 3537.911,
+      "Y": 7835.093,
+      "Z": 53.59471,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 3537.911,
+      "Y": 7835.093,
+      "Z": 53.59471,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 11704.0,
+      "Y": 6654.0,
+      "Z": 51.72552,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 11633.5,
+      "Y": 7047.739,
+      "Z": 51.72623,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 11633.5,
+      "Y": 7047.739,
+      "Z": 51.72623,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 6836.0,
+      "Y": 5574.0,
+      "Z": 57.20641,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 6424.0,
+      "Y": 5308.0,
+      "Z": 48.5273,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 6516.246,
+      "Y": 5333.793,
+      "Z": 49.61449,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 7972.0,
+      "Y": 9306.0,
+      "Z": 52.44665,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 8372.0,
+      "Y": 9606.0,
+      "Z": 50.3841,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 8325.443,
+      "Y": 9439.265,
+      "Z": 50.3844,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 6874.0,
+      "Y": 10656.0,
+      "Z": 55.99911,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 6274.0,
+      "Y": 10306.0,
+      "Z": 53.67197,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 6531.542,
+      "Y": 10449.32,
+      "Z": 53.72581,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 8022.0,
+      "Y": 4258.0,
+      "Z": 53.72062,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 8572.0,
+      "Y": 4558.0,
+      "Z": 51.36862,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 8363.293,
+      "Y": 4466.604,
+      "Z": 51.87788,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 9178.0,
+      "Y": 5392.0,
+      "Z": -71.24659,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 9572.0,
+      "Y": 4908.0,
+      "Z": -71.2406,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 9388.395,
+      "Y": 5051.803,
+      "Z": -71.24259,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 10962.0,
+      "Y": 4060.0,
+      "Z": -71.2406,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 10422.0,
+      "Y": 4258.0,
+      "Z": -71.2406,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 10565.31,
+      "Y": 4111.331,
+      "Z": -71.2406,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 10472.0,
+      "Y": 5858.0,
+      "Z": -71.2406,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 11022.0,
+      "Y": 6358.0,
+      "Z": 51.32826,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 10727.26,
+      "Y": 6151.174,
+      "Z": 23.06097,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 6194.0,
+      "Y": 3594.0,
+      "Z": 49.99485,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 5799.531,
+      "Y": 3527.718,
+      "Z": 51.11725,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 5799.531,
+      "Y": 3527.718,
+      "Z": 51.11725,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 8678.0,
+      "Y": 11496.0,
+      "Z": 53.61436,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 9064.474,
+      "Y": 11392.86,
+      "Z": 54.01519,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 9064.474,
+      "Y": 11392.86,
+      "Z": 54.01519,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 8608.0,
+      "Y": 11528.0,
+      "Z": 53.03674,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 8279.201,
+      "Y": 11755.78,
+      "Z": 55.6813,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 8279.201,
+      "Y": 11755.78,
+      "Z": 55.6813,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 9868.0,
+      "Y": 5924.0,
+      "Z": -71.2406,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 9540.007,
+      "Y": 5695.045,
+      "Z": -71.24052,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 9540.007,
+      "Y": 5695.045,
+      "Z": -71.24052,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 4790.0,
+      "Y": 8916.0,
+      "Z": -69.84425,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 5148.958,
+      "Y": 9092.487,
+      "Z": -70.86375,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 5148.958,
+      "Y": 9092.487,
+      "Z": -70.86375,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 2900.0,
+      "Y": 9138.0,
+      "Z": 50.63323,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 2524.0,
+      "Y": 8656.0,
+      "Z": 51.77736,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 2732.359,
+      "Y": 8774.825,
+      "Z": 51.49251,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 3274.0,
+      "Y": 10306.0,
+      "Z": -64.52871,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 3074.0,
+      "Y": 10706.0,
+      "Z": -70.7086,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 3046.675,
+      "Y": 10635.07,
+      "Z": -70.54329,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 11748.0,
+      "Y": 4578.0,
+      "Z": -71.2406,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 11922.0,
+      "Y": 4158.0,
+      "Z": -71.2406,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 12002.62,
+      "Y": 4269.524,
+      "Z": -68.09554,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 8372.0,
+      "Y": 9006.0,
+      "Z": 54.1954,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 8372.0,
+      "Y": 9606.0,
+      "Z": 50.3841,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 8274.713,
+      "Y": 9393.979,
+      "Z": 51.56081,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 6424.0,
+      "Y": 5908.0,
+      "Z": 51.76094,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 6424.0,
+      "Y": 5308.0,
+      "Z": 48.5273,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 6470.971,
+      "Y": 5510.772,
+      "Z": 49.8787,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 5560.0,
+      "Y": 6466.0,
+      "Z": 51.67947,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 4924.0,
+      "Y": 6658.0,
+      "Z": 50.64949,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 5193.324,
+      "Y": 6625.84,
+      "Z": 51.25489,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 9222.0,
+      "Y": 8456.0,
+      "Z": 52.5453,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 9872.0,
+      "Y": 8256.0,
+      "Z": 63.24517,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 9614.753,
+      "Y": 8380.229,
+      "Z": 54.56204,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 9622.0,
+      "Y": 10256.0,
+      "Z": 52.3063,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 9072.0,
+      "Y": 10806.0,
+      "Z": 50.51832,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 9345.537,
+      "Y": 10545.08,
+      "Z": 51.0898,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 9072.0,
+      "Y": 10806.0,
+      "Z": 50.51847,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 9672.0,
+      "Y": 10306.0,
+      "Z": 52.3063,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 9415.265,
+      "Y": 10600.65,
+      "Z": 51.49186,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 5194.0,
+      "Y": 4670.0,
+      "Z": 50.24515,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 5774.0,
+      "Y": 4158.0,
+      "Z": 49.68156,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 5454.256,
+      "Y": 4366.246,
+      "Z": 49.86278,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 5776.0,
+      "Y": 4180.0,
+      "Z": 49.6442,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 5124.0,
+      "Y": 4608.0,
+      "Z": 50.22992,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 5391.7,
+      "Y": 4290.966,
+      "Z": 49.92635,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 7124.0,
+      "Y": 1708.0,
+      "Z": 49.44656,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 7372.0,
+      "Y": 2358.0,
+      "Z": 51.97475,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 7118.579,
+      "Y": 2107.959,
+      "Z": 51.24806,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 7716.0,
+      "Y": 13208.0,
+      "Z": 52.8381,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 7472.0,
+      "Y": 12556.0,
+      "Z": 56.4768,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 7713.194,
+      "Y": 12808.01,
+      "Z": 54.54596,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 1798.0,
+      "Y": 10832.0,
+      "Z": 52.8381,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 2424.0,
+      "Y": 10406.0,
+      "Z": 54.3255,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 2152.07,
+      "Y": 10645.9,
+      "Z": 53.6864,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
+    "Start": {
+      "X": 13062.0,
+      "Y": 4092.0,
+      "Z": 51.3669,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "End": {
+      "X": 12472.0,
+      "Y": 4508.0,
+      "Z": 51.7294,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Target": {
+      "X": 12718.01,
+      "Y": 4296.134,
+      "Z": 51.52205,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  }
+]

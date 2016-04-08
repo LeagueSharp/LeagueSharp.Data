@@ -5,10 +5,17 @@
     using System.Linq;
     using System.Reflection;
 
+    /// <summary>
+    ///     Loads JSON resources marked with the <see cref="ResourceImportAttribute" /> attribute.
+    /// </summary>
     internal static class ResourceLoader
     {
         #region Public Methods and Operators
 
+        /// <summary>
+        ///     Initializes this instance.
+        /// </summary>
+        /// <exception cref="Exception"></exception>
         public static void Initialize()
         {
             var importClasses =
@@ -55,6 +62,12 @@
 
         #region Methods
 
+        /// <summary>
+        ///     Gets the fields and properties.
+        /// </summary>
+        /// <param name="type">The type.</param>
+        /// <param name="flags">The flags.</param>
+        /// <returns></returns>
         private static IEnumerable<MemberInfo> GetFieldsAndProperties(
             Type type,
             BindingFlags flags = BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Static)
@@ -62,6 +75,12 @@
             return type.GetMembers(flags).Where(m => m.IsDefined(typeof(ResourceImportAttribute), false));
         }
 
+        /// <summary>
+        ///     Gets the type of the member.
+        /// </summary>
+        /// <param name="member">The member.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentException"></exception>
         private static Type GetMemberType(this MemberInfo member)
         {
             switch (member.MemberType)
@@ -79,6 +98,13 @@
             }
         }
 
+        /// <summary>
+        ///     Sets the value of a member.
+        /// </summary>
+        /// <param name="member">The member.</param>
+        /// <param name="target">The target.</param>
+        /// <param name="value">The value.</param>
+        /// <exception cref="ArgumentException"></exception>
         private static void SetValue(this MemberInfo member, object target, object value)
         {
             switch (member.MemberType)

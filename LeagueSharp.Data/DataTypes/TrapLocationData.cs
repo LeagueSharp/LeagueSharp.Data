@@ -15,8 +15,8 @@
         /// <summary>
         ///     The trap locations data
         /// </summary>
-        [ResourceImport("TrapLocations.json")]
-        private static List<TrapLocationEntry> TrapLocationsData = new List<TrapLocationEntry>();
+        [ResourceImport("TrapLocationsData.json")]
+        private static List<TrapLocationDatantry> TrapLocationsData = new List<TrapLocationDatantry>();
 
         #endregion
 
@@ -28,7 +28,7 @@
         /// <value>
         ///     The trap locations.
         /// </value>
-        public IReadOnlyList<TrapLocationEntry> TrapLocations => TrapLocationsData;
+        public IReadOnlyList<TrapLocationDatantry> TrapLocations => TrapLocationsData;
 
         #endregion
 
@@ -69,7 +69,7 @@
     /// <summary>
     ///     JSON Wrapper for trap locations.
     /// </summary>
-    public class TrapLocationEntry
+    public class TrapLocationDatantry
     {
         #region Public Properties
 

@@ -4,6 +4,10 @@
 
     using Newtonsoft.Json.Linq;
 
+    /// <summary>
+    ///     Marks a field/class that needs it's data from a JSON resource. Populated at runtime.
+    /// </summary>
+    /// <seealso cref="System.Attribute" />
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Field | AttributeTargets.Property)]
     internal class ResourceImportAttribute : Attribute
     {

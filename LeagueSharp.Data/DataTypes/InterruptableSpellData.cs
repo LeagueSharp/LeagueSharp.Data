@@ -43,11 +43,11 @@
         /// <summary>
         ///     Gets the global interruptable spells list.
         /// </summary>
-        [ResourceImport("GlobalInterruptableSpellsList.json")]
+        [ResourceImport("GlobalInterruptableSpellData.json")]
         private static List<InterruptableSpellDataEntry> GlobalInterruptableSpellsList { get; set; } =
             new List<InterruptableSpellDataEntry>();
 
-        [ResourceImport("InterruptableSpells.json")]
+        [ResourceImport("InterruptableSpellsData.json")]
         private static Dictionary<string, List<InterruptableSpellDataEntry>> InterruptableSpellsDictionary { get; set; }
             = new Dictionary<string, List<InterruptableSpellDataEntry>>();
 

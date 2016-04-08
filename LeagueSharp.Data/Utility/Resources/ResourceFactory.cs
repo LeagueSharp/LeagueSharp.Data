@@ -7,6 +7,9 @@
     using System.Security.Permissions;
     using System.Text;
 
+    /// <summary>
+    ///     Obtrieves resources.
+    /// </summary>
     public static class ResourceFactory
     {
         #region Public Methods and Operators

@@ -11,10 +11,16 @@
     using Newtonsoft.Json.Converters;
     using Newtonsoft.Json.Linq;
 
+    /// <summary>
+    ///     Creates JSON data from resources.
+    /// </summary>
     internal static class JsonFactory
     {
         #region Constructors and Destructors
 
+        /// <summary>
+        ///     Initializes the <see cref="JsonFactory" /> class.
+        /// </summary>
         static JsonFactory()
         {
             DefaultSettings = new JsonSerializerSettings

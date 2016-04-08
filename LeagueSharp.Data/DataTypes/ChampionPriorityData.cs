@@ -14,7 +14,7 @@
         #region Static Fields
 
         [ResourceImport("Priority.json")]
-        private static List<PriorityCategory> PriorityCategoriesList = new List<PriorityCategory>();
+        private static List<ChampionPriorityDataEntry> PriorityCategoriesList = new List<ChampionPriorityDataEntry>();
 
         #endregion
 
@@ -31,7 +31,7 @@
         /// <summary>
         ///     The priority categories
         /// </summary>
-        public IReadOnlyList<PriorityCategory> PriorityCategories => PriorityCategoriesList;
+        public IReadOnlyList<ChampionPriorityDataEntry> PriorityCategories => PriorityCategoriesList;
 
         #endregion
     }
@@ -39,7 +39,7 @@
     /// <summary>
     ///     Category class for Priorities
     /// </summary>
-    public class PriorityCategory
+    public class ChampionPriorityDataEntry
     {
         #region Public Properties
 

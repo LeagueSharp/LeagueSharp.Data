@@ -16,8 +16,8 @@
         /// <summary>
         ///     The spells list
         /// </summary>
-        [ResourceImport("Gapclosers.json")]
-        public readonly Dictionary<string, GapCloserEntry> SpellsList = new Dictionary<string, GapCloserEntry>();
+        [ResourceImport("GapcloserData.json")]
+        public readonly Dictionary<string, GapcloserDataEntry> SpellsList = new Dictionary<string, GapcloserDataEntry>();
 
         #endregion
 
@@ -42,14 +42,14 @@
         /// </value>
         /// <param name="name">The champion name.</param>
         /// <returns></returns>
-        public GapCloserEntry this[string name] => this.SpellsList[name];
+        public GapcloserDataEntry this[string name] => this.SpellsList[name];
 
         #endregion
 
         /// <summary>
         ///     GapCloser Data Container
         /// </summary>
-        public struct GapCloserEntry
+        public struct GapcloserDataEntry
         {
             #region Public Properties
 

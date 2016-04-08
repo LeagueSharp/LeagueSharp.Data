@@ -78,11 +78,12 @@
     <Compile Include="Data.cs" />
     <Compile Include="DataTypes\ChampionPriorityData.cs" />
     <Compile Include="DataTypes\DamageDatabase.cs" />
+    <Compile Include="DataTypes\FlashJukeData.cs" />
     <Compile Include="DataTypes\GapcloserData.cs" />
     <Compile Include="DataTypes\InterruptableSpellData.cs" />
     <Compile Include="DataTypes\MapData.cs" />
     <Compile Include="DataTypes\SpellDatabase.cs" />
-    <Compile Include="DataTypes\TrapLocations.cs" />
+    <Compile Include="DataTypes\TrapLocationData.cs" />
     <Compile Include="Enumerations\CastType.cs" />
     <Compile Include="Enumerations\CollisionableObjects.cs" />
     <Compile Include="Enumerations\DamageScalingTarget.cs" />
@@ -108,14 +109,14 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="Resources\6.6.json" />
-    <EmbeddedResource Include="Resources\Database.json" />
     <EmbeddedResource Include="Resources\SpellDatabase.json" />
-    <EmbeddedResource Include="Resources\Gapclosers.json" />
-    <EmbeddedResource Include="Resources\GlobalInterruptableSpellsList.json" />
-    <EmbeddedResource Include="Resources\InterruptableSpells.json" />
-    <EmbeddedResource Include="Resources\Map.json" />
-    <EmbeddedResource Include="Resources\Priority.json" />
-    <EmbeddedResource Include="Resources\TrapLocations.json" />
+    <EmbeddedResource Include="Resources\GapcloserData.json" />
+    <EmbeddedResource Include="Resources\GlobalInterruptableSpellData.json" />
+    <EmbeddedResource Include="Resources\InterruptableSpellsData.json" />
+    <EmbeddedResource Include="Resources\MapData.json" />
+    <EmbeddedResource Include="Resources\PriorityData.json" />
+    <EmbeddedResource Include="Resources\TrapLocationsData.json" />
+    <None Include="Resources\FlashJukeData.json" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

@@ -15,8 +15,8 @@
     {
         #region Static Fields
 
-        [ResourceImport("Map.json")]
-        private static Dictionary<int, Map> MapById = new Dictionary<int, Map>();
+        [ResourceImport("MapData.json")]
+        private static Dictionary<int, MapDataEntry> MapById = new Dictionary<int, MapDataEntry>();
 
         #endregion
 
@@ -36,7 +36,7 @@
         /// <summary>
         ///     Map by ID list.
         /// </summary>
-        public IReadOnlyDictionary<int, Map> Maps => MapById;
+        public IReadOnlyDictionary<int, MapDataEntry> Maps => MapById;
 
         #endregion
 
@@ -50,12 +50,12 @@
         /// </value>
         /// <param name="mapId">The map identifier.</param>
         /// <returns></returns>
-        public Map this[int mapId] => this.Maps[mapId];
+        public MapDataEntry this[int mapId] => this.Maps[mapId];
 
         #endregion
     }
 
-    public class Map
+    public class MapDataEntry
     {
         #region Public Properties
 
