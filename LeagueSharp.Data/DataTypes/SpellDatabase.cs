@@ -10,9 +10,9 @@
     /// <summary>
     ///     Gets data on spells.
     /// </summary>
-    /// <seealso cref="DataType{T}" />
+    /// <seealso cref="LeagueSharp.Data.DataType" />
     [ResourceImport]
-    public class SpellDatabase : DataType<SpellDatabase>
+    public class SpellDatabase : DataType
     {
         #region Static Fields
 

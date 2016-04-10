@@ -6,10 +6,11 @@
     using LeagueSharp.Data.Utility.Resources;
 
     /// <summary>
-    ///     Gets a list of gapclosers.
+    ///     Gets data on gapclosers.
     /// </summary>
+    /// <seealso cref="LeagueSharp.Data.DataType" />
     [ResourceImport]
-    public class GapcloserData : DataType<GapcloserData>
+    public class GapcloserData : DataType
     {
         #region Fields
 
@@ -35,10 +36,10 @@
         #region Public Indexers
 
         /// <summary>
-        ///     Gets the <see cref="GapCloserEntry" /> with the specified champion name.
+        ///     Gets the <see cref="GapcloserDataEntry" /> with the specified champion name.
         /// </summary>
         /// <value>
-        ///     The <see cref="GapCloserEntry" />.
+        ///     The <see cref="GapcloserDataEntry" />.
         /// </value>
         /// <param name="name">The champion name.</param>
         /// <returns></returns>

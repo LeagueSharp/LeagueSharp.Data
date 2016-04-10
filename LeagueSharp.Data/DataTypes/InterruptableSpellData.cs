@@ -6,11 +6,12 @@
     using LeagueSharp.Data.Utility.Resources;
 
     /// <summary>
-    ///     Gets interruptable spells.
+    ///     Gets data on interruptable spells.
     /// </summary>
-    /// <seealso cref="DataType{T}" />
+    /// <seealso cref="LeagueSharp.Data.DataType" />
+    /// <seealso cref="DataType" />
     [ResourceImport]
-    public class InterruptableSpellData : DataType<InterruptableSpellData>
+    public class InterruptableSpellData : DataType
     {
         #region Constructors and Destructors
 

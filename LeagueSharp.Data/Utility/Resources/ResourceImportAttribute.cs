@@ -2,8 +2,6 @@
 {
     using System;
 
-    using Newtonsoft.Json.Linq;
-
     /// <summary>
     ///     Marks a field/class that needs it's data from a JSON resource. Populated at runtime.
     /// </summary>
@@ -54,14 +52,6 @@
         ///     The filter.
         /// </value>
         public Type Filter { get; set; }
-
-        /// <summary>
-        ///     Gets or sets the raw data.
-        /// </summary>
-        /// <value>
-        ///     The raw data.
-        /// </value>
-        public JToken RawData { get; set; }
 
         #endregion
     }

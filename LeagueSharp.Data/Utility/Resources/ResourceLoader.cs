@@ -30,7 +30,7 @@
                     {
                         var valueType = member.GetMemberType();
                         var import = member.GetCustomAttribute<ResourceImportAttribute>();
-                        var value = JsonFactory.JsonResource(import, member.DeclaringType, valueType);
+                        var value = JsonFactory.JsonResource(import.File, valueType);
 
                         if (import.Filter != null)
                         {
@@ -51,8 +51,11 @@
                     }
                     catch (Exception e)
                     {
-                        Console.WriteLine(@"LeagueSharp.Data encountered an error trying to load the resources.
-{0}", e);
+                        Console.WriteLine(
+                            "LeagueSharp.Data encountered an error trying to load the resources. {0}:{1}",
+                            member.Name,
+                            member.DeclaringType.Name);
+                        Console.WriteLine("\n{0}\n", e);
                     }
                 }
             }

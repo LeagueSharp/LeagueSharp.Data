@@ -9,7 +9,6 @@
 
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
-    using Newtonsoft.Json.Linq;
 
     /// <summary>
     ///     Creates JSON data from resources.
@@ -102,33 +101,6 @@
             }
 
             return JsonConvert.DeserializeObject<T>(ResourceFactory.StringResource(file, assembly), settings);
-        }
-
-        /// <summary>
-        ///     Deserialize Object from Resource
-        /// </summary>
-        /// <param name="attribute"></param>
-        /// <param name="jsonType"></param>
-        /// <param name="assembly"></param>
-        /// <param name="settings"></param>
-        /// <param name="memberType"></param>
-        /// <returns></returns>
-        [PermissionSet(SecurityAction.Assert, Unrestricted = true)]
-        public static object JsonResource(
-            ResourceImportAttribute attribute,
-            Type memberType,
-            Type jsonType = null,
-            Assembly assembly = null,
-            JsonSerializerSettings settings = null)
-        {
-            if (attribute.File == null)
-            {
-                throw new ArgumentNullException(nameof(attribute.File));
-            }
-
-            var stringResource = ResourceFactory.StringResource(attribute.File, assembly);
-            memberType.GetCustomAttribute<ResourceImportAttribute>().RawData = JToken.Parse(stringResource);
-            return attribute.RawData.ToObject(jsonType);
         }
 
         /// <summary>

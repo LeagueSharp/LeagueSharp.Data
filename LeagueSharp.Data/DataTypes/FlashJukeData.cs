@@ -10,8 +10,9 @@
     /// <summary>
     ///     Gets data for flash juke locations.
     /// </summary>
+    /// <seealso cref="LeagueSharp.Data.DataType" />
     [ResourceImport]
-    public class FlashJukeData
+    public class FlashJukeData : DataType
     {
         #region Static Fields
 

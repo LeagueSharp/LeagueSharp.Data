@@ -7,13 +7,13 @@
     /// <summary>
     ///     Gets champion priorities.
     /// </summary>
-    /// <seealso cref="DataType{T}" />
+    /// <seealso cref="LeagueSharp.Data.DataType" />
     [ResourceImport]
-    public class ChampionPriorityData : DataType<ChampionPriorityData>
+    public class ChampionPriorityData : DataType
     {
         #region Static Fields
 
-        [ResourceImport("Priority.json")]
+        [ResourceImport("PriorityData.json")]
         private static List<ChampionPriorityDataEntry> PriorityCategoriesList = new List<ChampionPriorityDataEntry>();
 
         #endregion

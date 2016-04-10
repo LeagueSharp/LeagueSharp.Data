@@ -9,9 +9,9 @@
     /// <summary>
     ///     Gets data on maps.
     /// </summary>
-    /// <seealso cref="DataType{T}" />
+    /// <seealso cref="LeagueSharp.Data.DataType" />
     [ResourceImport]
-    public class MapData : DataType<MapData>
+    public class MapData : DataType
     {
         #region Static Fields
 
@@ -43,10 +43,10 @@
         #region Public Indexers
 
         /// <summary>
-        ///     Gets the <see cref="Map" /> with the specified map identifier.
+        ///     Gets the <see cref="MapDataEntry" /> with the specified map identifier.
         /// </summary>
         /// <value>
-        ///     The <see cref="Map" />.
+        ///     The <see cref="MapDataEntry" />.
         /// </value>
         /// <param name="mapId">The map identifier.</param>
         /// <returns></returns>

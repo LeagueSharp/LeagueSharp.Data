@@ -15,17 +15,17 @@
     /// <summary>
     ///     Gets damages. Only loads damages for champions in the game.
     /// </summary>
-    /// <seealso cref="DataType{T}" />
+    /// <seealso cref="DataType" />
     [ResourceImport]
-    public class DamageDatabase : DataType<DamageDatabase>
+    public class DamageDatabase : DataType
     {
         #region Static Fields
 
         /// <summary>
         ///     The damage version files.
         /// </summary>
-        private static readonly IDictionary<string, byte[]> DamageFiles = new Dictionary<string, byte[]>
-                                                                              { { "6.6", Resources._6_6 } };
+        internal static readonly IDictionary<string, byte[]> DamageFiles = new Dictionary<string, byte[]>
+                                                                               { { "6.6", Resources._6_6 } };
 
         #endregion
 
@@ -36,7 +36,7 @@
         /// </summary>
         private DamageDatabase()
         {
-            var version = new Version("6.6");
+            var version = new Version("6.7");
             var versionString = $"{version.Major}.{version.Minor}";
 
             var fileBytes = DamageFiles.ContainsKey(versionString)
@@ -70,6 +70,42 @@
         /// </summary>
         private static Dictionary<string, ChampionDamage> DamageCollection { get; } =
             new Dictionary<string, ChampionDamage>();
+
+        #endregion
+
+        #region Public Indexers
+
+        /// <summary>
+        ///     Gets the <see cref="ChampionDamage" /> with the specified champion name.
+        /// </summary>
+        /// <value>
+        ///     The <see cref="ChampionDamage" />.
+        /// </value>
+        /// <param name="championName">Name of the champion.</param>
+        /// <returns></returns>
+        public ChampionDamage this[string championName]
+        {
+            get
+            {
+                return DamageCollection[championName];
+            }
+        }
+
+        /// <summary>
+        ///     Gets the <see cref="ChampionDamage" /> with the specified hero.
+        /// </summary>
+        /// <value>
+        ///     The <see cref="ChampionDamage" />.
+        /// </value>
+        /// <param name="hero">The hero.</param>
+        /// <returns></returns>
+        public ChampionDamage this[Obj_AI_Hero hero]
+        {
+            get
+            {
+                return DamageCollection[hero.ChampionName];
+            }
+        }
 
         #endregion
 

@@ -7,8 +7,12 @@
 
     using SharpDX;
 
+    /// <summary>
+    ///     Gets locations to place traps.
+    /// </summary>
+    /// <seealso cref="LeagueSharp.Data.DataType" />
     [ResourceImport]
-    public class TrapLocationData : DataType<TrapLocationData>
+    public class TrapLocationData : DataType
     {
         #region Static Fields
 

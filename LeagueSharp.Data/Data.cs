@@ -9,8 +9,6 @@
 
     using LeagueSharp.Data.Utility.Resources;
 
-    using Newtonsoft.Json.Linq;
-
     public class Data
     {
         #region Static Fields
@@ -67,7 +65,7 @@
         /// <typeparam name="T"></typeparam>
         /// <returns></returns>
         [PermissionSet(SecurityAction.Assert, Unrestricted = true)]
-        public static T Get<T>() where T : DataType<T>
+        public static T Get<T>() where T : DataType
         {
             try
             {
@@ -77,7 +75,7 @@
                     return (T)dataImpl;
                 }
 
-                dataImpl = (DataType<T>)Activator.CreateInstance(typeof(T), true);
+                dataImpl = (DataType)Activator.CreateInstance(typeof(T), true);
                 Cache[typeof(T)] = dataImpl;
 
                 return (T)dataImpl;
@@ -92,27 +90,10 @@
         #endregion
     }
 
-    public abstract class DataType
-    {
-    }
-
     /// <summary>
     ///     Represents that a class has data that can be obtained from LeagueSharp.Data
     /// </summary>
-    public abstract class DataType<T> : DataType
-        where T : DataType<T>
+    public abstract class DataType
     {
-        #region Public Methods and Operators
-
-        /// <summary>
-        ///     Gets the raw data.
-        /// </summary>
-        /// <returns></returns>
-        public JToken GetRawData()
-        {
-            return typeof(T).GetCustomAttribute<ResourceImportAttribute>().RawData;
-        }
-
-        #endregion
     }
 }

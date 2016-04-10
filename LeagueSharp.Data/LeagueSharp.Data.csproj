@@ -108,7 +108,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Resources\6.6.json" />
+    <None Include="Resources\DamageData\6.6.json" />
     <EmbeddedResource Include="Resources\SpellDatabase.json" />
     <EmbeddedResource Include="Resources\GapcloserData.json" />
     <EmbeddedResource Include="Resources\GlobalInterruptableSpellData.json" />
@@ -116,7 +116,7 @@
     <EmbeddedResource Include="Resources\MapData.json" />
     <EmbeddedResource Include="Resources\PriorityData.json" />
     <EmbeddedResource Include="Resources\TrapLocationsData.json" />
-    <None Include="Resources\FlashJukeData.json" />
+    <EmbeddedResource Include="Resources\FlashJukeData.json" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
