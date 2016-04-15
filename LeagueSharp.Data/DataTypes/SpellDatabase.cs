@@ -37,7 +37,7 @@
         /// <summary>
         ///     A list of all the entries in the SpellDatabase.
         /// </summary>
-        public static IReadOnlyList<SpellDatabaseEntry> Spells => SpellsList;
+        public IReadOnlyList<SpellDatabaseEntry> Spells => SpellsList;
 
         #endregion
 
@@ -52,9 +52,9 @@
         /// <returns>
         ///     The <see cref="IEnumerable{T}" /> collection of <see cref="SpellDatabaseEntry" />.
         /// </returns>
-        public static IEnumerable<SpellDatabaseEntry> Get(Func<SpellDatabaseEntry, bool> predicate = null)
+        public IEnumerable<SpellDatabaseEntry> Get(Func<SpellDatabaseEntry, bool> predicate = null)
         {
-            return predicate == null ? Spells : Spells.Where(predicate);
+            return predicate == null ? this.Spells : this.Spells.Where(predicate);
         }
 
         /// <summary>
@@ -64,11 +64,11 @@
         /// <returns>
         ///     The <see cref="SpellDatabaseEntry" />
         /// </returns>
-        public static SpellDatabaseEntry GetByMissileName(string missileSpellName)
+        public SpellDatabaseEntry GetByMissileName(string missileSpellName)
         {
             missileSpellName = missileSpellName.ToLower();
             return
-                Spells.FirstOrDefault(
+                this.Spells.FirstOrDefault(
                     spellData =>
                     (spellData.MissileSpellName?.ToLower() == missileSpellName)
                     || spellData.ExtraMissileNames.Contains(missileSpellName));
@@ -81,20 +81,20 @@
         /// <returns>
         ///     The <see cref="SpellDatabaseEntry" />
         /// </returns>
-        public static SpellDatabaseEntry GetByName(string spellName)
+        public SpellDatabaseEntry GetByName(string spellName)
         {
             spellName = spellName.ToLower();
             return
-                Spells.FirstOrDefault(
+                this.Spells.FirstOrDefault(
                     spellData =>
                     spellData.SpellName.ToLower() == spellName || spellData.ExtraSpellNames.Contains(spellName));
         }
 
-        public static SpellDatabaseEntry GetBySourceObjectName(string objectName)
+        public SpellDatabaseEntry GetBySourceObjectName(string objectName)
         {
             objectName = objectName.ToLowerInvariant();
             return
-                Spells.Where(spellData => spellData.SourceObjectName.Length != 0)
+                this.Spells.Where(spellData => spellData.SourceObjectName.Length != 0)
                     .FirstOrDefault(spellData => objectName.Contains(spellData.SourceObjectName));
         }
 
