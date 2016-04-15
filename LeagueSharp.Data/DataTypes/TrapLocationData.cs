@@ -24,6 +24,17 @@
 
         #endregion
 
+        #region Constructors and Destructors
+
+        /// <summary>
+        ///     Prevents a default instance of the <see cref="TrapLocationData" /> class from being created.
+        /// </summary>
+        private TrapLocationData()
+        {
+        }
+
+        #endregion
+
         #region Public Properties
 
         /// <summary>

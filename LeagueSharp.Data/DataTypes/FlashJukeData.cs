@@ -21,6 +21,17 @@
 
         #endregion
 
+        #region Constructors and Destructors
+
+        /// <summary>
+        ///     Prevents a default instance of the <see cref="FlashJukeData" /> class from being created.
+        /// </summary>
+        private FlashJukeData()
+        {
+        }
+
+        #endregion
+
         #region Public Properties
 
         /// <summary>

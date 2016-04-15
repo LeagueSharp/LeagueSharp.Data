@@ -1,6 +1,7 @@
 ﻿namespace LeagueSharp.Data.DataTypes
 {
     using System.Collections.Generic;
+    using System.Linq;
 
     using LeagueSharp.Data.Utility.Resources;
 
@@ -20,6 +21,9 @@
 
         #region Constructors and Destructors
 
+        /// <summary>
+        ///     Prevents a default instance of the <see cref="ChampionPriorityData" /> class from being created.
+        /// </summary>
         private ChampionPriorityData()
         {
         }
@@ -32,6 +36,31 @@
         ///     The priority categories
         /// </summary>
         public IReadOnlyList<ChampionPriorityDataEntry> PriorityCategories => PriorityCategoriesList;
+
+        #endregion
+
+        #region Public Methods and Operators
+
+        /// <summary>
+        ///     Gets the champions.
+        /// </summary>
+        /// <param name="priorityLevel">The priority level.</param>
+        /// <returns></returns>
+        public string[] GetChampions(int priorityLevel)
+        {
+            return this.PriorityCategories.FirstOrDefault(x => x.Value == priorityLevel)?.Champions.ToArray()
+                   ?? new string[0];
+        }
+
+        /// <summary>
+        ///     Gets the priority.
+        /// </summary>
+        /// <param name="champion">The champion.</param>
+        /// <returns></returns>
+        public int GetPriority(string champion)
+        {
+            return this.PriorityCategories.FirstOrDefault(x => x.Champions.Contains(champion))?.Value ?? 2;
+        }
 
         #endregion
     }
