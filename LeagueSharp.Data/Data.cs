@@ -16,7 +16,7 @@
         /// <summary>
         ///     The cache
         /// </summary>
-        private static readonly Dictionary<Type, DataType> Cache = new Dictionary<Type, DataType>();
+        internal static readonly Dictionary<Type, DataType> Cache = new Dictionary<Type, DataType>();
 
         #endregion
 

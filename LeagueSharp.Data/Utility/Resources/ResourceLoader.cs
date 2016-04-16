@@ -58,6 +58,8 @@
                         Console.WriteLine("\n{0}\n", e);
                     }
                 }
+
+                Data.Cache[c] = (DataType)Activator.CreateInstance(c, true);
             }
         }
 
