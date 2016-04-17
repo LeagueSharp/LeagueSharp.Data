@@ -1,12 +1,13 @@
 ﻿namespace LeagueSharp.Data.DataTypes
 {
     using System.Collections.Generic;
+    using System.Collections.ObjectModel;
 
     using LeagueSharp.Data.Enumerations;
     using LeagueSharp.Data.Utility.Resources;
 
     /// <summary>
-    ///     Gets data on gapclosers.
+    /// Gets data on gapclosers.
     /// </summary>
     /// <seealso cref="LeagueSharp.Data.DataType" />
     [ResourceImport]
@@ -15,10 +16,18 @@
         #region Fields
 
         /// <summary>
-        ///     The spells list
+        /// The spells
         /// </summary>
         [ResourceImport("GapcloserData.json")]
-        public readonly Dictionary<string, GapcloserDataEntry> SpellsList = new Dictionary<string, GapcloserDataEntry>();
+        private static Dictionary<string, GapcloserDataEntry> Spells = new Dictionary<string, GapcloserDataEntry>();
+
+        /// <summary>
+        /// Gets the spells list.
+        /// </summary>
+        /// <value>
+        /// The spells list.
+        /// </value>
+        public IReadOnlyDictionary<string, GapcloserDataEntry> SpellsList => Spells;
 
         #endregion
 
