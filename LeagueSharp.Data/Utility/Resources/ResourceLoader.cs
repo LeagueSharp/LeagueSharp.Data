@@ -4,6 +4,7 @@
     using System.Collections.Generic;
     using System.Linq;
     using System.Reflection;
+    using System.Threading.Tasks;
 
     /// <summary>
     ///     Loads JSON resources marked with the <see cref="ResourceImportAttribute" /> attribute.
@@ -22,45 +23,51 @@
                 typeof(ResourceLoader).Assembly.DefinedTypes.Where(
                     t => t.IsClass && t.IsDefined(typeof(ResourceImportAttribute), false));
 
+            var tasks = new List<Task>();
+
             foreach (var c in importClasses)
             {
-                foreach (var member in GetFieldsAndProperties(c))
-                {
-                    try
-                    {
-                        var valueType = member.GetMemberType();
-                        var import = member.GetCustomAttribute<ResourceImportAttribute>();
-                        var value = JsonFactory.JsonResource(import.File, valueType);
-
-                        if (import.Filter != null)
+                Parallel.ForEach(
+                    GetFieldsAndProperties(c),
+                    member =>
                         {
-                            if (
-                                !import.Filter.GetInterfaces()
-                                     .Any(x => x.IsGenericType && x.GetGenericTypeDefinition() == typeof(IFilter<>)))
-                            {
-                                throw new Exception($"{nameof(import.Filter)} does not implement {nameof(IFilter)}");
-                            }
+                            tasks.Add(
+                                Task.Factory.StartNew(
+                                    () =>
+                                        {
+                                            var valueType = member.GetMemberType();
+                                            var import = member.GetCustomAttribute<ResourceImportAttribute>();
+                                            var value = JsonFactory.JsonResource(import.File, valueType);
 
-                            var filterInstance = Activator.CreateInstance(import.Filter);
-                            var apply = import.Filter.GetMethod("Apply", BindingFlags.Public | BindingFlags.Instance);
+                                            if (import.Filter != null)
+                                            {
+                                                if (
+                                                    !import.Filter.GetInterfaces()
+                                                         .Any(
+                                                             x =>
+                                                             x.IsGenericType
+                                                             && x.GetGenericTypeDefinition() == typeof(IFilter<>)))
+                                                {
+                                                    throw new Exception(
+                                                        $"{nameof(import.Filter)} does not implement {nameof(IFilter)}");
+                                                }
 
-                            value = apply.Invoke(filterInstance, new[] { value });
-                        }
+                                                var filterInstance = Activator.CreateInstance(import.Filter);
+                                                var apply = import.Filter.GetMethod(
+                                                    "Apply",
+                                                    BindingFlags.Public | BindingFlags.Instance);
 
-                        member.SetValue(null, value);
-                    }
-                    catch (Exception e)
-                    {
-                        Console.WriteLine(
-                            "LeagueSharp.Data encountered an error trying to load the resources. {0}:{1}",
-                            member.Name,
-                            member.DeclaringType.Name);
-                        Console.WriteLine("\n{0}\n", e);
-                    }
-                }
+                                                value = apply.Invoke(filterInstance, new[] { value });
+                                            }
+
+                                            member.SetValue(null, value);
+                                        }));
+                        });
 
                 Data.Cache[c] = (DataType)Activator.CreateInstance(c, true);
             }
+
+            Task.WaitAll(tasks.ToArray());
         }
 
         #endregion
