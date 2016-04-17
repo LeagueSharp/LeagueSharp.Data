@@ -58,30 +58,30 @@
         public GapcloserDataEntry this[string name] => this.SpellsList[name];
 
         #endregion
+    }
+
+    /// <summary>
+    ///     GapCloser Data Container
+    /// </summary>
+    public struct GapcloserDataEntry
+    {
+        #region Public Properties
 
         /// <summary>
-        ///     GapCloser Data Container
+        ///     Spell Type
         /// </summary>
-        public struct GapcloserDataEntry
-        {
-            #region Public Properties
+        public GapcloserType SkillType { get; set; }
 
-            /// <summary>
-            ///     Spell Type
-            /// </summary>
-            public GapcloserType SkillType { get; set; }
+        /// <summary>
+        ///     Spell Slot
+        /// </summary>
+        public SpellSlot Slot { get; set; }
 
-            /// <summary>
-            ///     Spell Slot
-            /// </summary>
-            public SpellSlot Slot { get; set; }
+        /// <summary>
+        ///     Spell Name
+        /// </summary>
+        public string SpellName { get; set; }
 
-            /// <summary>
-            ///     Spell Name
-            /// </summary>
-            public string SpellName { get; set; }
-
-            #endregion
-        }
+        #endregion
     }
 }
