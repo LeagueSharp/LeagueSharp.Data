@@ -3,7 +3,9 @@
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    using System.Net;
+    using System.Text;
+
+    using LeagueSharp.Data.Utility.Resources;
 
     using Newtonsoft.Json;
     using Newtonsoft.Json.Linq;
@@ -17,12 +19,9 @@
         /// </summary>
         private ChampionDatabase()
         {
-            // TODO get game version + add json files as resources
-            var webclient = new WebClient();
             var championsJson =
-                JObject.Parse(
-                    webclient.DownloadString("http://ddragon.leagueoflegends.com/cdn/6.7.1/data/en_US/champion.json"))[
-                        "data"].Value<JObject>();
+                JObject.Parse(Encoding.Default.GetString(ResourceFactory.ByteResource("champion.json")))["data"]
+                    .Value<JObject>();
 
             foreach (var champion in championsJson)
             {
@@ -33,8 +32,7 @@
             {
                 var championObj =
                     JObject.Parse(
-                        webclient.DownloadString(
-                            $"http://ddragon.leagueoflegends.com/cdn/6.7.1/data/en_US/champion/{champion}.json"));
+                        Encoding.Default.GetString(ResourceFactory.ByteResource($"ChampionData.{champion}.json")));
 
                 this.ChampionDataList.Add(championObj["data"][champion].ToObject<ChampionDatabaseEntry>());
             }
@@ -172,15 +170,15 @@
         #endregion
     }
 
-    public class Skin
+    public class ChampionSkin
     {
         #region Public Properties
 
         /// <summary>
-        ///     Gets or sets a value indicating whether this <see cref="Skin" /> has chromas.
+        ///     Gets or sets a value indicating whether this <see cref="ChampionSkin" /> has chromas.
         /// </summary>
         /// <value>
-        ///     <c>true</c> if this <see cref="Skin" /> has chromas; otherwise, <c>false</c>.
+        ///     <c>true</c> if this <see cref="ChampionSkin" /> has chromas; otherwise, <c>false</c>.
         /// </value>
         [JsonProperty("chromas")]
         public bool Chromas { get; set; }
@@ -215,7 +213,7 @@
         #endregion
     }
 
-    public class Info
+    public class ChampionInfo
     {
         #region Public Properties
 
@@ -258,7 +256,7 @@
         #endregion
     }
 
-    public class Stats
+    public class ChampionStats
     {
         #region Public Properties
 
@@ -443,7 +441,7 @@
         #endregion
     }
 
-    public class LevelTip
+    public class ChampionLevelTip
     {
         #region Public Properties
 
@@ -468,15 +466,15 @@
         #endregion
     }
 
-    public class Var
+    public class ChampionVar
     {
         #region Public Properties
 
         /// <summary>
-        ///     Gets or sets the coeff.
+        ///     Gets or sets the coefficient. The type is dynamic because coeff can either be a double array, or a double.
         /// </summary>
         /// <value>
-        ///     The coeff.
+        ///     The coefficient.
         /// </value>
         [JsonProperty("coeff")]
         public dynamic Coeff { get; set; }
@@ -502,9 +500,18 @@
         #endregion
     }
 
-    public class Spell
+    public class ChampionSpell
     {
         #region Public Properties
+
+        /// <summary>
+        ///     Gets or sets the level tip.
+        /// </summary>
+        /// <value>
+        ///     The level tip.
+        /// </value>
+        [JsonProperty("leveltip")]
+        public ChampionLevelTip ChampionLevelTip { get; set; }
 
         /// <summary>
         ///     Gets or sets the cooldown.
@@ -597,15 +604,6 @@
         public Image Image { get; set; }
 
         /// <summary>
-        ///     Gets or sets the level tip.
-        /// </summary>
-        /// <value>
-        ///     The level tip.
-        /// </value>
-        [JsonProperty("leveltip")]
-        public LevelTip LevelTip { get; set; }
-
-        /// <summary>
         ///     Gets or sets the maximum ammo.
         /// </summary>
         /// <value>
@@ -675,12 +673,12 @@
         ///     The vars.
         /// </value>
         [JsonProperty("vars")]
-        public IList<Var> Vars { get; set; }
+        public IList<ChampionVar> Vars { get; set; }
 
         #endregion
     }
 
-    public class Passive
+    public class ChampionPassive
     {
         #region Public Properties
 
@@ -714,7 +712,7 @@
         #endregion
     }
 
-    public class Item
+    public class ChampionBlockItem
     {
         #region Public Properties
 
@@ -750,7 +748,7 @@
         #endregion
     }
 
-    public class Block
+    public class ChampionItemSetBlock
     {
         #region Public Properties
 
@@ -771,7 +769,7 @@
         ///     The items.
         /// </value>
         [JsonProperty("items")]
-        public IList<Item> Items { get; set; }
+        public IList<ChampionBlockItem> Items { get; set; }
 
         /// <summary>
         ///     Gets or sets the maximum allowed account level for the block to be visible to the player. Defaults to -1 which is
@@ -837,7 +835,7 @@
 
     /// <summary>
     /// </summary>
-    public class Recommended
+    public class ChampionRecommendedItemSet
     {
         #region Public Properties
 
@@ -848,7 +846,7 @@
         ///     The blocks.
         /// </value>
         [JsonProperty("blocks")]
-        public IList<Block> Blocks { get; set; }
+        public IList<ChampionItemSetBlock> Blocks { get; set; }
 
         /// <summary>
         ///     Gets or sets the champion.
@@ -951,6 +949,33 @@
         public string Blurb { get; set; }
 
         /// <summary>
+        ///     Gets or sets the information.
+        /// </summary>
+        /// <value>
+        ///     The information.
+        /// </value>
+        [JsonProperty("info")]
+        public ChampionInfo ChampionInfo { get; set; }
+
+        /// <summary>
+        ///     Gets or sets the passive.
+        /// </summary>
+        /// <value>
+        ///     The passive.
+        /// </value>
+        [JsonProperty("passive")]
+        public ChampionPassive ChampionPassive { get; set; }
+
+        /// <summary>
+        ///     Gets or sets the stats.
+        /// </summary>
+        /// <value>
+        ///     The stats.
+        /// </value>
+        [JsonProperty("stats")]
+        public ChampionStats ChampionStats { get; set; }
+
+        /// <summary>
         ///     Gets or sets the enemy tips.
         /// </summary>
         /// <value>
@@ -976,15 +1001,6 @@
         /// </value>
         [JsonProperty("image")]
         public Image Image { get; set; }
-
-        /// <summary>
-        ///     Gets or sets the information.
-        /// </summary>
-        /// <value>
-        ///     The information.
-        /// </value>
-        [JsonProperty("info")]
-        public Info Info { get; set; }
 
         /// <summary>
         ///     Gets or sets the key.
@@ -1023,22 +1039,13 @@
         public string ParType { get; set; }
 
         /// <summary>
-        ///     Gets or sets the passive.
-        /// </summary>
-        /// <value>
-        ///     The passive.
-        /// </value>
-        [JsonProperty("passive")]
-        public Passive Passive { get; set; }
-
-        /// <summary>
         ///     Gets or sets the recommended.
         /// </summary>
         /// <value>
         ///     The recommended.
         /// </value>
         [JsonProperty("recommended")]
-        public IList<Recommended> Recommended { get; set; }
+        public IList<ChampionRecommendedItemSet> Recommended { get; set; }
 
         /// <summary>
         ///     Gets or sets the skins.
@@ -1047,7 +1054,7 @@
         ///     The skins.
         /// </value>
         [JsonProperty("skins")]
-        public IList<Skin> Skins { get; set; }
+        public IList<ChampionSkin> Skins { get; set; }
 
         /// <summary>
         ///     Gets or sets the spells.
@@ -1056,16 +1063,7 @@
         ///     The spells.
         /// </value>
         [JsonProperty("spells")]
-        public IList<Spell> Spells { get; set; }
-
-        /// <summary>
-        ///     Gets or sets the stats.
-        /// </summary>
-        /// <value>
-        ///     The stats.
-        /// </value>
-        [JsonProperty("stats")]
-        public Stats Stats { get; set; }
+        public IList<ChampionSpell> Spells { get; set; }
 
         /// <summary>
         ///     Gets or sets the tags.
