@@ -25,7 +25,10 @@
         ///     The damage version files.
         /// </summary>
         internal static readonly IDictionary<string, byte[]> DamageFiles = new Dictionary<string, byte[]>
-                                                                               { { "6.6", Resources._6_6 }, {"6.7", Resources._6_7} };
+                                                                               {
+                                                                                   { "6.6", Resources._6_6 },
+                                                                                   { "6.7", Resources._6_7 }
+                                                                               };
 
         #endregion
 
@@ -83,13 +86,7 @@
         /// </value>
         /// <param name="championName">Name of the champion.</param>
         /// <returns></returns>
-        public ChampionDamage this[string championName]
-        {
-            get
-            {
-                return DamageCollection[championName];
-            }
-        }
+        public ChampionDamage this[string championName] => DamageCollection[championName];
 
         /// <summary>
         ///     Gets the <see cref="ChampionDamage" /> with the specified hero.
@@ -99,13 +96,7 @@
         /// </value>
         /// <param name="hero">The hero.</param>
         /// <returns></returns>
-        public ChampionDamage this[Obj_AI_Hero hero]
-        {
-            get
-            {
-                return DamageCollection[hero.ChampionName];
-            }
-        }
+        public ChampionDamage this[Obj_AI_Hero hero] => DamageCollection[hero.ChampionName];
 
         #endregion
 

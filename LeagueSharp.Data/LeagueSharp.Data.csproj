@@ -119,6 +119,7 @@
     <EmbeddedResource Include="Resources\PriorityData.json" />
     <EmbeddedResource Include="Resources\TrapLocationsData.json" />
     <EmbeddedResource Include="Resources\FlashJukeData.json" />
+    <None Include="Resources\DamageData\6.7.json" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
