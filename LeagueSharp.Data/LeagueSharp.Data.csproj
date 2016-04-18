@@ -251,8 +251,11 @@
     <EmbeddedResource Include="Resources\ChampionData\Ziggs.json" />
     <EmbeddedResource Include="Resources\ChampionData\Zilean.json" />
     <EmbeddedResource Include="Resources\ChampionData\Zyra.json" />
+    <EmbeddedResource Include="Resources\item.json" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Compile Include="DataTypes\ItemDatabase.cs" />
+  </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
