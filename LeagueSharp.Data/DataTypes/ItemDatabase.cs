@@ -18,7 +18,7 @@
         private ItemDatabase()
         {
             ItemDictionary =
-                JObject.Parse(Encoding.Default.GetString(ResourceFactory.ByteResource("item.json")))["data"]
+                JObject.Parse(Encoding.Default.GetString(ResourceFactory.ByteResource("ItemData.json")))["data"]
                     .ToObject<Dictionary<int, ItemDatabaseEntry>>();
         }
 

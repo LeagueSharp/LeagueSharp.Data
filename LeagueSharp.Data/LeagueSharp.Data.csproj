@@ -116,7 +116,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <EmbeddedResource Include="Resources\champion.json" />
+    <EmbeddedResource Include="Resources\ChampionData.json" />
     <EmbeddedResource Include="Resources\ChampionData\Aatrox.json" />
     <EmbeddedResource Include="Resources\ChampionData\Ahri.json" />
     <EmbeddedResource Include="Resources\ChampionData\Akali.json" />
@@ -258,7 +258,7 @@
     <EmbeddedResource Include="Resources\ChampionData\Ziggs.json" />
     <EmbeddedResource Include="Resources\ChampionData\Zilean.json" />
     <EmbeddedResource Include="Resources\ChampionData\Zyra.json" />
-    <EmbeddedResource Include="Resources\item.json" />
+    <EmbeddedResource Include="Resources\ItemData.json" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataTypes\ItemDatabase.cs" />

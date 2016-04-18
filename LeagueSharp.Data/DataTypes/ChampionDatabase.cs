@@ -20,7 +20,7 @@
         private ChampionDatabase()
         {
             var championsJson =
-                JObject.Parse(Encoding.Default.GetString(ResourceFactory.ByteResource("champion.json")))["data"]
+                JObject.Parse(Encoding.Default.GetString(ResourceFactory.ByteResource("ChampionData.json")))["data"]
                     .Value<JObject>();
 
             foreach (var champion in championsJson)

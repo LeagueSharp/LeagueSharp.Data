@@ -10,6 +10,8 @@ LeagueSharp.Data is an SDK with APIs to easily retrieve Leaugue of Legends relat
 * Map information
 * Spell Database
 * Trap Locations
+* Champion data
+* Item data
 
 # Usage
 
