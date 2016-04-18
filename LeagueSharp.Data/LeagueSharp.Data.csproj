@@ -55,6 +55,12 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>LeagueSharp.Data.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="LeagueSharp">
       <HintPath>C:\Program Files (x86)\LeagueSharp\System\LeagueSharp.dll</HintPath>
@@ -129,6 +135,7 @@
     <EmbeddedResource Include="Resources\ChampionData\Cassiopeia.json" />
     <EmbeddedResource Include="Resources\ChampionData\Chogath.json" />
     <EmbeddedResource Include="Resources\ChampionData\Corki.json" />
+    <None Include="LeagueSharp.Data.snk" />
     <None Include="Resources\DamageData\6.6.json" />
     <EmbeddedResource Include="Resources\SpellDatabase.json" />
     <EmbeddedResource Include="Resources\GapcloserData.json" />
