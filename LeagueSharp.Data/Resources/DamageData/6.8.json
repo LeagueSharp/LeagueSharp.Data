@@ -1427,9 +1427,10 @@
 					"BonusDamages": [
 						{
 							"DamageType": "Magical",
-							"DamagePercentages": [ 0.05, 0.05, 0.05, 0.05, 0.05 ],
+							"DamagePercentages": [ 0.03, 0.03, 0.03, 0.03, 0.03 ],
+							"MinDamageOnMinion": [ 15, 15, 15, 15, 15 ],
 							"MaxDamageOnMinion": [ 150, 150, 150, 150, 150 ],
-							"ScalePer100Ap": 0.022,
+							"ScalePer100Ap": 0.0303,
 							"ScalingTarget": "Target",
 							"ScalingType": "MissingHealth"
 						}
@@ -1443,11 +1444,11 @@
 				"SpellData": {
 					"SpellEffectType": "Attack",
 					"DamageType": "Magical",
-					"Damages": [ 50, 80, 110, 140, 170 ],
+					"Damages": [ 40, 65, 90, 115, 140 ],
 					"BonusDamages": [
 						{
 							"DamageType": "Magical",
-							"DamagePercentages": [ 0.2, 0.2, 0.2, 0.2, 0.2 ],
+							"DamagePercentages": [ 0.4, 0.4, 0.4, 0.4, 0.4 ],
 							"ScalingTarget": "Source",
 							"ScalingType": "AbilityPoints"
 						}
@@ -3875,7 +3876,7 @@
 				"SpellData": {
 					"SpellEffectType": "None",
 					"DamageType": "Magical",
-					"Damages": [ 5, 10, 15, 20, 25 ],
+					"Damages": [ 4, 8, 12, 16, 20 ],
 					"MaxDamageOnMinion": [ 60, 60, 60, 60, 60],
 					"BonusDamages": [
 						{

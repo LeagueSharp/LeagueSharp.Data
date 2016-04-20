@@ -25,10 +25,9 @@
         ///     The damage version files.
         /// </summary>
         internal static readonly IDictionary<string, byte[]> DamageFiles = new Dictionary<string, byte[]>
-                                                                               {
-                                                                                   { "6.6", Resources._6_6 },
-                                                                                   { "6.7", Resources._6_7 }
-                                                                               };
+        {
+            {"6.8", Resources._6_8}
+        };
 
         #endregion
 
@@ -39,12 +38,12 @@
         /// </summary>
         private DamageDatabase()
         {
-            var version = new Version("6.7");
+            var version = new Version("6.8");
             var versionString = $"{version.Major}.{version.Minor}";
 
             var fileBytes = DamageFiles.ContainsKey(versionString)
-                                ? DamageFiles[versionString]
-                                : DamageFiles.OrderByDescending(o => o.Key).FirstOrDefault().Value;
+                ? DamageFiles[versionString]
+                : DamageFiles.OrderByDescending(o => o.Key).FirstOrDefault().Value;
 
             if (fileBytes != null)
             {
