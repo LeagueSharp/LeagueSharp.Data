@@ -10,7 +10,7 @@
     using Newtonsoft.Json;
     using Newtonsoft.Json.Linq;
 
-    public class ChampionDatabase : DataType
+    public class ChampionDatabase : IDataType
     {
         #region Constructors and Destructors
 
@@ -19,23 +19,6 @@
         /// </summary>
         private ChampionDatabase()
         {
-            var championsJson =
-                JObject.Parse(Encoding.Default.GetString(ResourceFactory.ByteResource("ChampionData.json")))["data"]
-                    .Value<JObject>();
-
-            foreach (var champion in championsJson)
-            {
-                this.ChampionList.Add(champion.Key);
-            }
-
-            foreach (var champion in this.Champions)
-            {
-                var championObj =
-                    JObject.Parse(
-                        Encoding.Default.GetString(ResourceFactory.ByteResource($"ChampionData.{champion}.json")));
-
-                this.ChampionDataList.Add(championObj["data"][champion].ToObject<ChampionDatabaseEntry>());
-            }
         }
 
         #endregion
@@ -97,6 +80,34 @@
                 return
                     this.ChampionDataList.FirstOrDefault(
                         x => x.Name.Equals(champion, StringComparison.InvariantCultureIgnoreCase));
+            }
+        }
+
+        #endregion
+
+        #region Explicit Interface Methods
+
+        /// <summary>
+        ///     Initializes this instance.
+        /// </summary>
+        void IDataType.Initialize()
+        {
+            var championsJson =
+                JObject.Parse(Encoding.Default.GetString(ResourceFactory.ByteResource("ChampionData.json")))["data"]
+                    .Value<JObject>();
+
+            foreach (var champion in championsJson)
+            {
+                this.ChampionList.Add(champion.Key);
+            }
+
+            foreach (var champion in this.Champions)
+            {
+                var championObj =
+                    JObject.Parse(
+                        Encoding.Default.GetString(ResourceFactory.ByteResource($"ChampionData.{champion}.json")));
+
+                this.ChampionDataList.Add(championObj["data"][champion].ToObject<ChampionDatabaseEntry>());
             }
         }
 

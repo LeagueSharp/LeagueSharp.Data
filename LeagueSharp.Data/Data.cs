@@ -2,10 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
-    using System.IO;
-    using System.Reflection;
     using System.Security.Permissions;
-    using System.Text;
 
     using LeagueSharp.Data.Utility.Resources;
 
@@ -16,44 +13,7 @@
         /// <summary>
         ///     The cache
         /// </summary>
-        internal static readonly Dictionary<Type, DataType> Cache = new Dictionary<Type, DataType>();
-
-        #endregion
-
-        #region Constructors and Destructors
-
-        /// <summary>
-        ///     Initializes the <see cref="Data" /> class.
-        /// </summary>
-        [PermissionSet(SecurityAction.Assert, Unrestricted = true)]
-        static Data()
-        {
-            try
-            {
-                ResourceLoader.Initialize();
-            }
-            catch (ReflectionTypeLoadException ex)
-            {
-                var sb = new StringBuilder();
-                foreach (var exSub in ex.LoaderExceptions)
-                {
-                    sb.AppendLine(exSub.Message);
-                    var exFileNotFound = exSub as FileNotFoundException;
-                    if (!string.IsNullOrEmpty(exFileNotFound?.FusionLog))
-                    {
-                        sb.AppendLine("Fusion Log:");
-                        sb.AppendLine(exFileNotFound.FusionLog);
-                    }
-                    sb.AppendLine();
-                }
-
-                Console.WriteLine(sb.ToString());
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e);
-            }
-        }
+        internal static readonly Dictionary<Type, IDataType> Cache = new Dictionary<Type, IDataType>();
 
         #endregion
 
@@ -65,17 +25,19 @@
         /// <typeparam name="T"></typeparam>
         /// <returns></returns>
         [PermissionSet(SecurityAction.Assert, Unrestricted = true)]
-        public static T Get<T>() where T : DataType
+        public static T Get<T>() where T : IDataType
         {
             try
             {
-                DataType dataImpl;
+                IDataType dataImpl;
                 if (Cache.TryGetValue(typeof(T), out dataImpl))
                 {
                     return (T)dataImpl;
                 }
 
-                dataImpl = (DataType)Activator.CreateInstance(typeof(T), true);
+                dataImpl = (IDataType)Activator.CreateInstance(typeof(T), true);
+                dataImpl.Initialize();
+
                 Cache[typeof(T)] = dataImpl;
 
                 return (T)dataImpl;
@@ -93,7 +55,35 @@
     /// <summary>
     ///     Represents that a class has data that can be obtained from LeagueSharp.Data
     /// </summary>
-    public abstract class DataType
+    public interface IDataType
     {
+        #region Public Methods and Operators
+
+        /// <summary>
+        ///     Initializes this instance.
+        /// </summary>
+        void Initialize();
+
+        #endregion
+    }
+
+    /// <summary>
+    ///     Represents that a class has data that can be obtained from LeagueSharp.Data. Provides an implemenation to
+    ///     automaticaly load JSON resources.
+    /// </summary>
+    public abstract class DataType<T> : IDataType
+        where T : class
+    {
+        #region Explicit Interface Methods
+
+        /// <summary>
+        ///     Initializes the instance of the type.
+        /// </summary>
+        void IDataType.Initialize()
+        {
+            ResourceLoader.InitializeClass(typeof(T));
+        }
+
+        #endregion
     }
 }

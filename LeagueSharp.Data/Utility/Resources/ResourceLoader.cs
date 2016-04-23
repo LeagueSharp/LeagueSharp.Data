@@ -64,10 +64,41 @@
                                         }));
                         });
 
-                Data.Cache[c] = (DataType)Activator.CreateInstance(c, true);
+                Data.Cache[c] = (IDataType)Activator.CreateInstance(c, true);
             }
 
             Task.WaitAll(tasks.ToArray());
+        }
+
+        /// <summary>
+        ///     Initializes the class.
+        /// </summary>
+        /// <param name="type">The type.</param>
+        public static void InitializeClass(Type type)
+        {
+            foreach (var member in GetFieldsAndProperties(type))
+            {
+                var valueType = member.GetMemberType();
+                var import = member.GetCustomAttribute<ResourceImportAttribute>();
+                var value = JsonFactory.JsonResource(import.File, valueType);
+
+                if (import.Filter != null)
+                {
+                    if (
+                        !import.Filter.GetInterfaces()
+                             .Any(x => x.IsGenericType && x.GetGenericTypeDefinition() == typeof(IFilter<>)))
+                    {
+                        throw new Exception($"{nameof(import.Filter)} does not implement {nameof(IFilter)}");
+                    }
+
+                    var filterInstance = Activator.CreateInstance(import.Filter);
+                    var apply = import.Filter.GetMethod("Apply", BindingFlags.Public | BindingFlags.Instance);
+
+                    value = apply.Invoke(filterInstance, new[] { value });
+                }
+
+                member.SetValue(null, value);
+            }
         }
 
         #endregion

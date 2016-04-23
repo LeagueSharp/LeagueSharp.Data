@@ -136,7 +136,6 @@
     <EmbeddedResource Include="Resources\ChampionData\Chogath.json" />
     <EmbeddedResource Include="Resources\ChampionData\Corki.json" />
     <None Include="LeagueSharp.Data.snk" />
-    <None Include="Resources\DamageData\6.6.json" />
     <EmbeddedResource Include="Resources\SpellDatabase.json" />
     <EmbeddedResource Include="Resources\GapcloserData.json" />
     <EmbeddedResource Include="Resources\GlobalInterruptableSpellData.json" />
@@ -145,7 +144,6 @@
     <EmbeddedResource Include="Resources\PriorityData.json" />
     <EmbeddedResource Include="Resources\TrapLocationsData.json" />
     <EmbeddedResource Include="Resources\FlashJukeData.json" />
-    <None Include="Resources\DamageData\6.7.json" />
     <EmbeddedResource Include="Resources\ChampionData\Darius.json" />
     <EmbeddedResource Include="Resources\ChampionData\Diana.json" />
     <EmbeddedResource Include="Resources\ChampionData\Draven.json" />
@@ -259,6 +257,7 @@
     <EmbeddedResource Include="Resources\ChampionData\Zilean.json" />
     <EmbeddedResource Include="Resources\ChampionData\Zyra.json" />
     <EmbeddedResource Include="Resources\ItemData.json" />
+    <None Include="Resources\DamageData\6.8.json" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataTypes\ItemDatabase.cs" />

@@ -10,9 +10,9 @@
     /// <summary>
     ///     Gets locations to place traps.
     /// </summary>
-    /// <seealso cref="LeagueSharp.Data.DataType" />
+    /// <seealso cref="IDataType" />
     [ResourceImport]
-    public class TrapLocationData : DataType
+    public class TrapLocationData : DataType<TrapLocationData>
     {
         #region Static Fields
 

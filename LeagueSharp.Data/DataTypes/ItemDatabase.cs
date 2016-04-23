@@ -8,7 +8,7 @@
     using Newtonsoft.Json;
     using Newtonsoft.Json.Linq;
 
-    public class ItemDatabase : DataType
+    public class ItemDatabase : IDataType
     {
         #region Constructors and Destructors
 
@@ -17,9 +17,6 @@
         /// </summary>
         private ItemDatabase()
         {
-            ItemDictionary =
-                JObject.Parse(Encoding.Default.GetString(ResourceFactory.ByteResource("ItemData.json")))["data"]
-                    .ToObject<Dictionary<int, ItemDatabaseEntry>>();
         }
 
         #endregion
@@ -40,10 +37,10 @@
         #region Properties
 
         /// <summary>
-        /// Gets or sets the item dictionary.
+        ///     Gets or sets the item dictionary.
         /// </summary>
         /// <value>
-        /// The item dictionary.
+        ///     The item dictionary.
         /// </value>
         private static Dictionary<int, ItemDatabaseEntry> ItemDictionary { get; set; }
 
@@ -70,6 +67,20 @@
         /// <param name="id">The identifier.</param>
         /// <returns></returns>
         public ItemDatabaseEntry this[int id] => ItemDictionary[id];
+
+        #endregion
+
+        #region Explicit Interface Methods
+
+        /// <summary>
+        ///     Initializes this instance.
+        /// </summary>
+        void IDataType.Initialize()
+        {
+            ItemDictionary =
+                JObject.Parse(Encoding.Default.GetString(ResourceFactory.ByteResource("ItemData.json")))["data"]
+                    .ToObject<Dictionary<int, ItemDatabaseEntry>>();
+        }
 
         #endregion
     }

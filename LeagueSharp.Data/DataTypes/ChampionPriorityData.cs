@@ -8,9 +8,9 @@
     /// <summary>
     ///     Gets champion priorities.
     /// </summary>
-    /// <seealso cref="LeagueSharp.Data.DataType" />
+    /// <seealso cref="IDataType" />
     [ResourceImport]
-    public class ChampionPriorityData : DataType
+    public class ChampionPriorityData : DataType<ChampionPriorityData>
     {
         #region Static Fields
 

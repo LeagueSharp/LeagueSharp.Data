@@ -8,9 +8,9 @@
     /// <summary>
     ///     Gets data on gapclosers.
     /// </summary>
-    /// <seealso cref="LeagueSharp.Data.DataType" />
+    /// <seealso cref="IDataType" />
     [ResourceImport]
-    public class GapcloserData : DataType
+    public class GapcloserData : DataType<GapcloserData>
     {
         #region Static Fields
 

@@ -15,9 +15,9 @@
     /// <summary>
     ///     Gets damages. Only loads damages for champions in the game.
     /// </summary>
-    /// <seealso cref="DataType" />
+    /// <seealso cref="IDataType" />
     [ResourceImport]
-    public class DamageDatabase : DataType
+    public class DamageDatabase : IDataType
     {
         #region Static Fields
 
@@ -25,9 +25,7 @@
         ///     The damage version files.
         /// </summary>
         internal static readonly IDictionary<string, byte[]> DamageFiles = new Dictionary<string, byte[]>
-        {
-            {"6.8", Resources._6_8}
-        };
+                                                                               { { "6.8", Resources._6_8 } };
 
         #endregion
 
@@ -38,17 +36,6 @@
         /// </summary>
         private DamageDatabase()
         {
-            var version = new Version("6.8");
-            var versionString = $"{version.Major}.{version.Minor}";
-
-            var fileBytes = DamageFiles.ContainsKey(versionString)
-                ? DamageFiles[versionString]
-                : DamageFiles.OrderByDescending(o => o.Key).FirstOrDefault().Value;
-
-            if (fileBytes != null)
-            {
-                CreateDamages(JObject.Parse(Encoding.Default.GetString(fileBytes)));
-            }
         }
 
         #endregion
@@ -96,6 +83,28 @@
         /// <param name="hero">The hero.</param>
         /// <returns></returns>
         public ChampionDamage this[Obj_AI_Hero hero] => DamageCollection[hero.ChampionName];
+
+        #endregion
+
+        #region Explicit Interface Methods
+
+        /// <summary>
+        ///     Initializes this instance.
+        /// </summary>
+        void IDataType.Initialize()
+        {
+            var version = new Version("6.8");
+            var versionString = $"{version.Major}.{version.Minor}";
+
+            var fileBytes = DamageFiles.ContainsKey(versionString)
+                                ? DamageFiles[versionString]
+                                : DamageFiles.OrderByDescending(o => o.Key).FirstOrDefault().Value;
+
+            if (fileBytes != null)
+            {
+                CreateDamages(JObject.Parse(Encoding.Default.GetString(fileBytes)));
+            }
+        }
 
         #endregion
 
@@ -208,10 +217,10 @@
         #region Public Properties
 
         /// <summary>
-        /// Gets or sets the bonus damage on minion.
+        ///     Gets or sets the bonus damage on minion.
         /// </summary>
         /// <value>
-        /// The bonus damage on minion.
+        ///     The bonus damage on minion.
         /// </value>
         public List<double> BonusDamageOnMinion { get; set; }
 
@@ -226,44 +235,50 @@
         public DamageType DamageType { get; set; }
 
         /// <summary>
-        /// Gets or sets the maximum damage on minion.
+        ///     Gets or sets the maximum damage on minion.
         /// </summary>
         /// <value>
-        /// The maximum damage on minion.
+        ///     The maximum damage on minion.
         /// </value>
         public List<int> MaxDamageOnMinion { get; set; }
 
         /// <summary>
-        /// Gets or sets the minimum damage.
+        ///     Gets or sets the minimum damage.
         /// </summary>
         /// <value>
-        /// The minimum damage.
+        ///     The minimum damage.
         /// </value>
         public List<int> MinDamage { get; set; }
 
         /// <summary>
-        /// Gets or sets the scale per100 ad.
+        ///     Gets or sets the scale per100 ad.
         /// </summary>
         /// <value>
-        /// The scale per100 ad.
+        ///     The scale per100 ad.
         /// </value>
         public double ScalePer100Ad { get; set; }
 
         /// <summary>
-        /// Gets or sets the scale per100 ap.
+        ///     Gets or sets the scale per100 ap.
         /// </summary>
         /// <value>
-        /// The scale per100 ap.
+        ///     The scale per100 ap.
         /// </value>
         public double ScalePer100Ap { get; set; }
 
+        /// <summary>
+        ///     Gets or sets the scale per100 bonus ad.
+        /// </summary>
+        /// <value>
+        ///     The scale per100 bonus ad.
+        /// </value>
         public double ScalePer100BonusAd { get; set; }
 
         /// <summary>
-        /// Gets the Scaling Buff.
+        ///     Gets the Scaling Buff.
         /// </summary>
         /// <value>
-        /// The scaling buff.
+        ///     The scaling buff.
         /// </value>
         public string ScalingBuff { get; set; }
 
@@ -298,10 +313,10 @@
         #region Public Properties
 
         /// <summary>
-        /// Gets or sets the bonus damage on minion.
+        ///     Gets or sets the bonus damage on minion.
         /// </summary>
         /// <value>
-        /// The bonus damage on minion.
+        ///     The bonus damage on minion.
         /// </value>
         public List<double> BonusDamageOnMinion { get; set; }
 
@@ -316,10 +331,10 @@
         public List<double> Damages { get; set; }
 
         /// <summary>
-        /// Gets or sets the damages per level.
+        ///     Gets or sets the damages per level.
         /// </summary>
         /// <value>
-        /// The damages per level.
+        ///     The damages per level.
         /// </value>
         public List<double> DamagesPerLvl { get; set; }
 
@@ -329,34 +344,34 @@
         public DamageType DamageType { get; set; }
 
         /// <summary>
-        /// Gets or sets a value indicating whether this instance is apply on hit.
+        ///     Gets or sets a value indicating whether this instance is apply on hit.
         /// </summary>
         /// <value>
-        /// <c>true</c> if this instance is apply on hit; otherwise, <c>false</c>.
+        ///     <c>true</c> if this instance is apply on hit; otherwise, <c>false</c>.
         /// </value>
         public bool IsApplyOnHit { get; set; }
 
         /// <summary>
-        /// Gets or sets a value indicating whether this instance is modified damage.
+        ///     Gets or sets a value indicating whether this instance is modified damage.
         /// </summary>
         /// <value>
-        /// <c>true</c> if this instance is modified damage; otherwise, <c>false</c>.
+        ///     <c>true</c> if this instance is modified damage; otherwise, <c>false</c>.
         /// </value>
         public bool IsModifiedDamage { get; set; }
 
         /// <summary>
-        /// Gets or sets the maximum damage on minion.
+        ///     Gets or sets the maximum damage on minion.
         /// </summary>
         /// <value>
-        /// The maximum damage on minion.
+        ///     The maximum damage on minion.
         /// </value>
         public List<int> MaxDamageOnMinion { get; set; }
 
         /// <summary>
-        /// Gets or sets the scale per target missing health.
+        ///     Gets or sets the scale per target missing health.
         /// </summary>
         /// <value>
-        /// The scale per target missing health.
+        ///     The scale per target missing health.
         /// </value>
         public double ScalePerTargetMissHealth { get; set; }
 
@@ -381,10 +396,10 @@
         public DamageScalingTarget ScalingBuffTarget { get; set; }
 
         /// <summary>
-        /// Gets or sets the type of the spell effect.
+        ///     Gets or sets the type of the spell effect.
         /// </summary>
         /// <value>
-        /// The type of the spell effect.
+        ///     The type of the spell effect.
         /// </value>
         public SpellEffectType SpellEffectType { get; set; }
 
