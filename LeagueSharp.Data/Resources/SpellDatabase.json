@@ -1614,7 +1614,7 @@
     "RingRadius": 0,
     "Radius": 0,
     "Range": 2147483647,
-    "ResetsAutoAttackTimer": false,
+    "ResetsAutoAttackTimer": true,
     "Slot": "Q",
     "SourceObjectName": "",
     "SpellName": "AsheQ",
