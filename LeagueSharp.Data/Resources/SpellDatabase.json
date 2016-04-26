@@ -13798,7 +13798,7 @@
     "ArcAngle": 0,
     "RingRadius": 0,
     "Radius": 110,
-    "Range": 1400,
+    "Range": 1200,
     "ResetsAutoAttackTimer": false,
     "Slot": "R",
     "SourceObjectName": "",
