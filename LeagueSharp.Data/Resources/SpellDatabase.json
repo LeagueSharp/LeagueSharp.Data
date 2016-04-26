@@ -9745,7 +9745,7 @@
     "RingRadius": 0,
     "Radius": 0,
     "Range": 550,
-    "ResetsAutoAttackTimer": true,
+    "ResetsAutoAttackTimer": false,
     "Slot": "Q",
     "SourceObjectName": "",
     "SpellName": "JhinQ",
