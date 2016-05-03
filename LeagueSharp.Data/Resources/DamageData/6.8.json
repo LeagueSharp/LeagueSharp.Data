@@ -1143,7 +1143,29 @@
 						}
 					]
 				}
-			}
+			},
+			{
+				"Stage": "Empowered",
+				"SpellData": {
+					"SpellEffectType": "AoE",
+					"DamageType": "Magical",
+					"Damages": [ 150, 195, 240 ],
+					"BonusDamages": [
+						{
+							"DamageType": "Magical",
+							"DamagePercentages": [ 0.45, 0.45, 0.45 ],
+							"ScalingTarget": "Source",
+							"ScalingType": "AbilityPoints"
+						},
+						{
+							"DamageType": "Magical",
+							"DamagePercentages": [ 0.3, 0.75, 1.2 ],
+							"ScalingTarget": "Source",
+							"ScalingType": "AttackPoints"
+						}
+					]
+				}
+ 			}
 		]
 	},
 	"Darius": {
