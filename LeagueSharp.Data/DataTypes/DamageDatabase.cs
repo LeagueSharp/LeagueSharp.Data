@@ -25,7 +25,7 @@
         ///     The damage version files.
         /// </summary>
         internal static readonly IDictionary<string, byte[]> DamageFiles = new Dictionary<string, byte[]>
-                                                                               { { "6.8", Resources._6_8 } };
+                                                                               { { "6.9", Resources._6_9 } };
 
         #endregion
 
@@ -93,7 +93,7 @@
         /// </summary>
         void IDataType.Initialize()
         {
-            var version = new Version("6.8");
+            var version = new Version("6.9");
             var versionString = $"{version.Major}.{version.Minor}";
 
             var fileBytes = DamageFiles.ContainsKey(versionString)
