@@ -3183,6 +3183,12 @@
 							"DamagePercentages": [ 0.1, 0.1, 0.1 ],
 							"ScalingTarget": "Source",
 							"ScalingType": "BonusAttackPoints"
+						},
+						{
+							"DamageType": "Physical",
+							"DamagePercentages": [ 0.35, 0.35, 0.35 ],
+							"ScalingTarget": "Target",
+							"ScalingType": "MissingHealth"
 						}
 					]
 				}
