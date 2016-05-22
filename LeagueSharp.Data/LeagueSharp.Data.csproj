@@ -257,7 +257,7 @@
     <EmbeddedResource Include="Resources\ChampionData\Zilean.json" />
     <EmbeddedResource Include="Resources\ChampionData\Zyra.json" />
     <EmbeddedResource Include="Resources\ItemData.json" />
-    <None Include="Resources\DamageData\6.9.json" />
+    <None Include="Resources\DamageData\6.10.json" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataTypes\ItemDatabase.cs" />
