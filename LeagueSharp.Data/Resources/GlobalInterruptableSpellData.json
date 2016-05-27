@@ -2,13 +2,7 @@
   {
     "DangerLevel": "Low",
     "MovementInterrupts": true,
-    "Name": "OdinChannel",
-    "Slot": 62
-  },
-  {
-    "DangerLevel": "Low",
-    "MovementInterrupts": true,
-    "Name": "OdinChannelBomb",
+    "Name": "OdinCaptureChannel",
     "Slot": 62
   },
   {
