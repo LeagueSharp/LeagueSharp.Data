@@ -1327,7 +1327,7 @@
 					"DamageType": "True",
 					"Damages": [ 20, 40, 60 ],
 					"ScalingBuff": "dariushemo",
-					"ScalingBuffTarget": "Source",
+					"ScalingBuffTarget": "Target",
 					"BonusDamages": [
 						{
 							"DamageType": "True",
@@ -1335,7 +1335,7 @@
 							"ScalingTarget": "Source",
 							"ScalingType": "BonusAttackPoints",
 							"ScalingBuff": "dariushemo",
-							"ScalingBuffTarget": "Source"
+							"ScalingBuffTarget": "Target"
 						}
 					]
 				}
