@@ -1713,62 +1713,62 @@
 			}
 		]
 	},
-	"Fiddlesticks": {
-		"W": [
-			{
-				"Stage": "Default",
-				"SpellData": {
-					"SpellEffectType": "OverTime",
-					"DamageType": "Magical",
-					"Damages": [ 60, 90, 120, 150, 180 ],
-					"BonusDamages": [
-						{
-							"DamageType": "Magical",
-							"DamagePercentages": [ 0.45, 0.45, 0.45, 0.45, 0.45 ],
-							"ScalingTarget": "Source",
-							"ScalingType": "AbilityPoints"
-						}
-					]
-				}
-			}
-		],
-		"E": [
-			{
-				"Stage": "Default",
-				"SpellData": {
-					"SpellEffectType": "AoE",
-					"DamageType": "Magical",
-					"Damages": [ 65, 85, 105, 125, 145 ],
-					"BonusDamages": [
-						{
-							"DamageType": "Magical",
-							"DamagePercentages": [ 0.45, 0.45, 0.45, 0.45, 0.45 ],
-							"ScalingTarget": "Source",
-							"ScalingType": "AbilityPoints"
-						}
-					]
-				}
-			}
-		],
-		"R": [
-			{
-				"Stage": "Default",
-				"SpellData": {
-					"SpellEffectType": "AoE",
-					"DamageType": "Magical",
-					"Damages": [ 125, 225, 325 ],
-					"BonusDamages": [
-						{
-							"DamageType": "Magical",
-							"DamagePercentages": [ 0.45, 0.45, 0.45 ],
-							"ScalingTarget": "Source",
-							"ScalingType": "AbilityPoints"
-						}
-					]
-				}
-			}
-		]
-	},
+  "FiddleSticks": {
+    "W": [
+      {
+        "Stage": "Default",
+        "SpellData": {
+          "SpellEffectType": "OverTime",
+          "DamageType": "Magical",
+          "Damages": [ 60, 90, 120, 150, 180 ],
+          "BonusDamages": [
+            {
+              "DamageType": "Magical",
+              "DamagePercentages": [ 0.45, 0.45, 0.45, 0.45, 0.45 ],
+              "ScalingTarget": "Source",
+              "ScalingType": "AbilityPoints"
+            }
+          ]
+        }
+      }
+    ],
+    "E": [
+      {
+        "Stage": "Default",
+        "SpellData": {
+          "SpellEffectType": "AoE",
+          "DamageType": "Magical",
+          "Damages": [ 65, 85, 105, 125, 145 ],
+          "BonusDamages": [
+            {
+              "DamageType": "Magical",
+              "DamagePercentages": [ 0.45, 0.45, 0.45, 0.45, 0.45 ],
+              "ScalingTarget": "Source",
+              "ScalingType": "AbilityPoints"
+            }
+          ]
+        }
+      }
+    ],
+    "R": [
+      {
+        "Stage": "Default",
+        "SpellData": {
+          "SpellEffectType": "AoE",
+          "DamageType": "Magical",
+          "Damages": [ 125, 225, 325 ],
+          "BonusDamages": [
+            {
+              "DamageType": "Magical",
+              "DamagePercentages": [ 0.45, 0.45, 0.45 ],
+              "ScalingTarget": "Source",
+              "ScalingType": "AbilityPoints"
+            }
+          ]
+        }
+      }
+    ]
+  },
 	"Fiora": {
 		"Q": [
 			{

@@ -63,14 +63,14 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="LeagueSharp">
-      <HintPath>C:\Program Files (x86)\LeagueSharp\System\LeagueSharp.dll</HintPath>
+      <HintPath>C:\Program Files (x86)\PlaySharp\System\LeagueSharp.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>C:\Program Files (x86)\LeagueSharp\System\Newtonsoft.Json.dll</HintPath>
+      <HintPath>C:\Program Files (x86)\PlaySharp\System\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="SharpDX, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files (x86)\LeagueSharp\System\SharpDX.dll</HintPath>
+      <HintPath>C:\Program Files (x86)\PlaySharp\System\SharpDX.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -257,7 +257,7 @@
     <EmbeddedResource Include="Resources\ChampionData\Zilean.json" />
     <EmbeddedResource Include="Resources\ChampionData\Zyra.json" />
     <EmbeddedResource Include="Resources\ItemData.json" />
-    <None Include="Resources\DamageData\6.8.json" />
+    <EmbeddedResource Include="Resources\DamageData\6.11.json" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataTypes\ItemDatabase.cs" />
