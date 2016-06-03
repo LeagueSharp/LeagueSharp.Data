@@ -223,6 +223,14 @@
       "Slot": "Q"
     }
   ],
+  "Vladimir": [
+    {
+      "DangerLevel": "Low",
+      "MovementInterrupts": false,
+      "Name": null,
+      "Slot": "E"
+    }
+  ],
   "Zilean": [
     {
       "DangerLevel": "Low",
