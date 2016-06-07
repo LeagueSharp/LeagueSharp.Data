@@ -6891,7 +6891,7 @@
     "Radius": 300,
     "Range": 300,
     "ResetsAutoAttackTimer": false,
-    "Slot": "Q",
+    "Slot": "E",
     "SourceObjectName": "",
     "SpellName": "GarenE",
     "SpellTags": [
@@ -6941,7 +6941,7 @@
     "Radius": 0,
     "Range": 400,
     "ResetsAutoAttackTimer": false,
-    "Slot": "Q",
+    "Slot": "R",
     "SourceObjectName": "",
     "SpellName": "GarenR",
     "SpellTags": [
