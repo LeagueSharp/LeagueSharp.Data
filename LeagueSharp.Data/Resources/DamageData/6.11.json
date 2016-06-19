@@ -1209,11 +1209,11 @@
 				"SpellData": {
 					"SpellEffectType": "AoE",
 					"DamageType": "Mixed",
-					"Damages": [ 20, 32, 44, 56, 68 ],
+					"Damages": [ 80, 140, 200, 260, 3220 ],
 					"BonusDamages": [
 						{
 							"DamageType": "Mixed",
-							"DamagePercentages": [ 0.4, 0.4, 0.4, 0.4, 0.4 ],
+							"DamagePercentages": [ 1.6, 1.6, 1.6, 1.6, 1.6 ],
 							"ScalingTarget": "Source",
 							"ScalingType": "BonusAttackPoints"
 						}
@@ -1972,7 +1972,7 @@
 						},
 						{
 							"DamageType": "Magical",
-							"DamagePercentages": [ 0.04, 0.05, 0.06, 0.07, 0.08 ],
+							"DamagePercentages": [ 0.04, 0.045, 0.05, 0.055, 0.06 ],
 							"ScalingTarget": "Target",
 							"ScalingType": "MissingHealth"
 						}
@@ -7089,7 +7089,7 @@
 					"BonusDamages": [
 						{
 							"DamageType": "Magical",
-							"DamagePercentages": [ 0.7, 0.7, 0.7, 0.7, 0.7 ],
+							"DamagePercentages": [ 0.8, 0.8, 0.8, 0.8, 0.8 ],
 							"ScalingTarget": "Source",
 							"ScalingType": "AbilityPoints"
 						}
@@ -7107,7 +7107,7 @@
 					"BonusDamages": [
 						{
 							"DamageType": "Magical",
-							"DamagePercentages": [ 0.4, 0.4, 0.4, 0.4, 0.4 ],
+							"DamagePercentages": [ 0.5, 0.5, 0.5, 0.5, 0.5 ],
 							"ScalingTarget": "Source",
 							"ScalingType": "AbilityPoints"
 						}
