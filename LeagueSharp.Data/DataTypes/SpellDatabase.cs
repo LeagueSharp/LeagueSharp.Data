@@ -264,12 +264,12 @@
         /// <summary>
         ///     If spell is charged, holds the value of the max range it can reach, 0f by default
         /// </summary>
-        public float ChargedMaxRange { get; set; } = 0f;
+        public int ChargedMaxRange { get; set; } = 0;
         
         /// <summary>
         ///     If spell is charged, holds the value of the initial range the spell starts with, 0f by default
         /// </summary>
-        public float ChargedMinRange { get; set; } = 0f;
+        public int ChargedMinRange { get; set; } = 0;
         
         /// <summary>
         ///     If spell is charged, holds the value of its name

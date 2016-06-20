@@ -24854,6 +24854,11 @@
 		"Channel"
 	],
 	"ChampionName": "Varus",
+	"ChargedBuffName": "VarusQ",
+	"ChargedMaxRange": 1600,
+	"ChargedMinRange": 250,
+	"ChargedSpellName": "VarusQ",
+	"ChargeDuration": 1200,
 	"CollisionObjects": [
 		"YasuoWall"
 	],
@@ -26893,6 +26898,11 @@
 		"Channel"
 	],
 	"ChampionName": "Xerath",
+	"ChargedBuffName": "XerathArcanopulseChargeUp",
+	"ChargedMaxRange": 1550,
+	"ChargedMinRange": 750,
+	"ChargedSpellName": "XerathArcanopulseChargeUp",
+	"ChargeDuration": 1500,
 	"CollisionObjects": [],
 	"DangerValue": 2,
 	"Delay": 600,
