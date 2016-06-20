@@ -255,6 +255,31 @@
         ///     Array indicating the possible cast types (on enemy champion, on self, on a position)
         /// </summary>
         public CastType[] CastType { get; set; }
+        
+        /// <summary>
+        ///     If spell is charged, holds the value of the buffname it applies, String.Empty by default
+        /// </summary>
+        public string ChargedBuffName { get; set; } = "";
+        
+        /// <summary>
+        ///     If spell is charged, holds the value of the max range it can reach, 0f by default
+        /// </summary>
+        public float ChargedMaxRange { get; set; } = 0f;
+        
+        /// <summary>
+        ///     If spell is charged, holds the value of the initial range the spell starts with, 0f by default
+        /// </summary>
+        public float ChargedMinRange { get; set; } = 0f;
+        
+        /// <summary>
+        ///     If spell is charged, holds the value of its name
+        /// </summary>
+        public string ChargedSpellName { get; set; } = "";
+        
+        /// <summary>
+        ///     If spell is charged, holds the value of the max time it can be charged for (in milliseconds)
+        /// </summary>
+        public int ChargeDuration { get; set; } = 0;
 
         /// <summary>
         ///     SpellData Entry's Champion Name
