@@ -80,6 +80,11 @@
             ItemDictionary =
                 JObject.Parse(Encoding.Default.GetString(ResourceFactory.ByteResource("ItemData.json")))["data"]
                     .ToObject<Dictionary<int, ItemDatabaseEntry>>();
+
+            foreach (var pair in ItemDictionary)
+            {
+                pair.Value.Id = pair.Key;
+            }
         }
 
         #endregion
@@ -720,6 +725,7 @@
         #endregion
     }
 
+    [JsonObject(MemberSerialization.OptIn)]
     public class ItemDatabaseEntry
     {
         #region Public Properties
@@ -768,6 +774,14 @@
         /// </value>
         [JsonProperty("group")]
         public string Group { get; set; }
+
+        /// <summary>
+        ///     Gets or sets the identifier.
+        /// </summary>
+        /// <value>
+        ///     The identifier.
+        /// </value>
+        public int Id { get; set; }
 
         /// <summary>
         ///     Gets or sets the image.
