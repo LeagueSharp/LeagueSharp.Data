@@ -752,6 +752,15 @@
         public string Description { get; set; }
 
         /// <summary>
+        ///     Gets or sets the items this item builds from.
+        /// </summary>
+        /// <value>
+        ///     The items this item builds from.
+        /// </value>
+        [JsonProperty("from")]
+        public IList<int> From { get; set; }
+
+        /// <summary>
         ///     Gets or sets the group.
         /// </summary>
         /// <value>
@@ -776,7 +785,7 @@
         ///     The items this item builds into.
         /// </value>
         [JsonProperty("into")]
-        public IList<string> Into { get; set; }
+        public IList<int> Into { get; set; }
 
         /// <summary>
         ///     Gets or sets the item gold.
