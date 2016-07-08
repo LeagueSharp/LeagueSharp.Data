@@ -8391,6 +8391,22 @@
 						}
 					]
 				}
+			},
+			{
+				"Stage": "Empowered",
+				"SpellData": {
+					"SpellEffectType": "Single",
+					"DamageType": "Magical",
+					"Damages": [ 150, 180, 210, 240, 270 ],
+					"BonusDamages": [
+						{
+							"DamageType": "Magical",
+							"DamagePercentages": [ 1.1, 1.1, 1.1, 1.1, 1.1 ],
+							"ScalingTarget": "Source",
+							"ScalingType": "AbilityPoints"
+						}
+					]
+				}
 			}
 		],
 		"W": [
@@ -8423,11 +8439,33 @@
 							"DamageType": "Magical",
 							"DamagePercentages": [ 0.025, 0.025, 0.025, 0.025, 0.025 ],
 							"ScalingTarget": "Source",
-							"ScalingType": "BonusHealth"
+							"ScalingType": "MaxHealth"
 						},
 						{
 							"DamageType": "Magical",
 							"DamagePercentages": [ 0.35, 0.35, 0.35, 0.35, 0.35 ],
+							"ScalingTarget": "Source",
+							"ScalingType": "AbilityPoints"
+						}
+					]
+				}
+			},
+			{
+				"Stage": "Empowered",
+				"SpellData": {
+					"SpellEffectType": "AoE",
+					"DamageType": "Magical",
+					"Damages": [ 60, 90, 120, 150, 180 ],
+					"BonusDamages": [
+						{
+							"DamageType": "Magical",
+							"DamagePercentages": [ 0.1, 0.1, 0.1, 0.1, 0.1 ],
+							"ScalingTarget": "Source",
+							"ScalingType": "MaxHealth"
+						},
+						{
+							"DamageType": "Magical",
+							"DamagePercentages": [ 0.7, 0.7, 0.7, 0.7, 0.7 ],
 							"ScalingTarget": "Source",
 							"ScalingType": "AbilityPoints"
 						}
