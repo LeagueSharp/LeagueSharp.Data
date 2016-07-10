@@ -14898,7 +14898,7 @@
 	"ResetsAutoAttackTimer": false,
 	"Slot": "Q",
 	"SourceObjectName": "",
-	"SpellName": "MissFortuneRichochetShot",
+	"SpellName": "MissFortuneRicochetShot",
 	"SpellTags": [
 		"Damage"
 	],
