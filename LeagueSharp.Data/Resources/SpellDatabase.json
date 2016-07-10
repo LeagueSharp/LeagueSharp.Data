@@ -14877,7 +14877,7 @@
 	"CollisionObjects": [],
 	"DangerValue": 1,
 	"Delay": 250,
-	"ExtraMissileNames": [],
+	"ExtraMissileNames": [ "missFortunershotextra" ],
 	"ExtraRange": 0,
 	"ExtraSpellNames": [],
 	"ForceRemove": false,
