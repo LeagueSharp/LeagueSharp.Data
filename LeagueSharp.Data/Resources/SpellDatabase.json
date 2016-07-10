@@ -14890,7 +14890,7 @@
 	"MissileMaxSpeed": 0,
 	"MissileMinSpeed": 0,
 	"MissileSpeed": 1000,
-	"MissileSpellName": "",
+	"MissileSpellName": "MissFortuneRicochetShot",
 	"ArcAngle": 0,
 	"RingRadius": 0,
 	"Radius": 250,
@@ -14902,7 +14902,7 @@
 	"SpellTags": [
 		"Damage"
 	],
-	"SpellType": "SkillshotCone",
+	"SpellType": "TargetedMissile",
 	"ToggleParticleName": "",
 	"Width": 250,
 	"MinChannelDuration": 0,
