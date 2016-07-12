@@ -11191,7 +11191,7 @@
 	"MissileMaxSpeed": 0,
 	"MissileMinSpeed": 0,
 	"MissileSpeed": 1750,
-	"MissileSpellName": "",
+	"MissileSpellName": "JudicatorReckoning",
 	"ArcAngle": 0,
 	"RingRadius": 0,
 	"Radius": 0,
@@ -11204,7 +11204,7 @@
 		"Damage",
 		"CrowdControl"
 	],
-	"SpellType": "SkillshotMissileLine",
+	"SpellType": "TargetedMissile",
 	"ToggleParticleName": "",
 	"Width": 50,
 	"MinChannelDuration": 0,
