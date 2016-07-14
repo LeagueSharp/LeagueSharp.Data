@@ -651,7 +651,7 @@
 				"SpellData": {
 					"SpellEffectType": "AoE",
 					"DamageType": "Magical",
-					"DamagesPerLvl": [ 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100, 110, 120, 130, 140, 150, 160, 170 ],
+					"DamagesPerLvl": [ 50, 52, 54, 56, 58, 60, 63, 66, 69, 72, 75, 85, 95, 110, 125, 140, 155, 170 ],
 					"BonusDamages": [
 						{
 							"DamageType": "Magical",
@@ -1903,7 +1903,7 @@
 					"BonusDamages": [
 						{
 							"DamageType": "Physical",
-							"DamagePercentages": [ 0.55, 0.7, 0.85, 1, 1.15 ],
+							"DamagePercentages": [ 0.95, 1, 1.05, 1.1, 1.15 ],
 							"ScalingTarget": "Source",
 							"ScalingType": "BonusAttackPoints"
 						}
@@ -4291,7 +4291,7 @@
 				"SpellData": {
 					"SpellEffectType": "Attack",
 					"DamageType": "Magical",
-					"Damages": [ 40, 70, 100, 130, 160 ],
+					"Damages": [ 30, 55, 80, 105, 130 ],
 					"BonusDamages": [
 						{
 							"DamageType": "Magical",
@@ -4309,7 +4309,7 @@
 				"SpellData": {
 					"SpellEffectType": "AoE",
 					"DamageType": "Magical",
-					"Damages": [ 60, 110, 160, 210, 260 ],
+					"Damages": [ 60, 100, 140, 170, 220 ],
 					"BonusDamages": [
 						{
 							"DamageType": "Magical",
@@ -4345,7 +4345,7 @@
 				"SpellData": {
 					"SpellEffectType": "AoE",
 					"DamageType": "Magical",
-					"Damages": [ 150, 250, 350 ],
+					"Damages": [ 100, 175, 250 ],
 					"BonusDamages": [
 						{
 							"DamageType": "Magical",
@@ -4539,7 +4539,7 @@
 				"SpellData": {
 					"SpellEffectType": "AoE",
 					"DamageType": "Magical",
-					"Damages": [ 60, 110, 160, 210, 260 ],
+					"Damages": [ 50, 100, 150, 200, 250 ],
 					"BonusDamages": [
 						{
 							"DamageType": "Magical",
@@ -6917,7 +6917,7 @@
 				"SpellData": {
 					"SpellEffectType": "AoE",
 					"DamageType": "Magical",
-					"Damages": [ 40, 80, 120, 160, 200 ],
+					"Damages": [ 40, 70, 100, 130, 160 ],
 					"BonusDamages": [
 						{
 							"DamageType": "Magical",
