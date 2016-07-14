@@ -48,6 +48,11 @@
         /// <summary>
         ///     The <c>Mana</c> scaling type.
         /// </summary>
-        MaxMana
+        MaxMana,
+
+        /// <summary>
+        ///     The Bonus Mana scaling type.
+        /// </summary>
+        BonusMana
     }
 }
