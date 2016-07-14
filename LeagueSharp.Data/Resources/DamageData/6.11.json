@@ -6304,19 +6304,19 @@
 				"SpellData": {
 					"SpellEffectType": "Single",
 					"DamageType": "Magical",
-					"Damages": [ 60, 90, 120, 150, 180 ],
+					"Damages": [ 60, 85, 110, 135, 160, 185 ],
 					"BonusDamages": [
 						{
 							"DamageType": "Magical",
-							"DamagePercentages": [ 0.55, 0.55, 0.55, 0.55, 0.55 ],
+							"DamagePercentages": [ 0.45, 0.45, 0.45, 0.45, 0.45, 0.45 ],
 							"ScalingTarget": "Source",
 							"ScalingType": "AbilityPoints"
 						},
 						{
 							"DamageType": "Magical",
-							"DamagePercentages": [ 0.02, 0.025, 0.03, 0.035, 0.04 ],
+							"DamagePercentages": [ 0.03, 0.03, 0.03, 0.03, 0.03, 0.03 ],
 							"ScalingTarget": "Source",
-							"ScalingType": "MaxMana"
+							"ScalingType": "BonusMana"
 						}
 					]
 				}
@@ -6332,15 +6332,15 @@
 					"BonusDamages": [
 						{
 							"DamageType": "Magical",
-							"DamagePercentages": [ 0.4, 0.4, 0.4, 0.4, 0.4 ],
+							"DamagePercentages": [ 0.2, 0.2, 0.2, 0.2, 0.2 ],
 							"ScalingTarget": "Source",
 							"ScalingType": "AbilityPoints"
 						},
 						{
 							"DamageType": "Magical",
-							"DamagePercentages": [ 0.025, 0.025, 0.025, 0.025, 0.025 ],
+							"DamagePercentages": [ 0.01, 0.01, 0.01, 0.01, 0.01 ],
 							"ScalingTarget": "Source",
-							"ScalingType": "MaxMana"
+							"ScalingType": "BonusMana"
 						}
 					]
 				}
@@ -6352,11 +6352,11 @@
 				"SpellData": {
 					"SpellEffectType": "Single",
 					"DamageType": "Magical",
-					"Damages": [ 36, 52, 68, 84, 100 ],
+					"Damages": [ 50, 75, 100, 125, 150 ],
 					"BonusDamages": [
 						{
 							"DamageType": "Magical",
-							"DamagePercentages": [ 0.2, 0.2, 0.2, 0.2, 0.2 ],
+							"DamagePercentages": [ 0.3, 0.3, 0.3, 0.3, 0.3 ],
 							"ScalingTarget": "Source",
 							"ScalingType": "AbilityPoints"
 						},
@@ -6364,7 +6364,7 @@
 							"DamageType": "Magical",
 							"DamagePercentages": [ 0.02, 0.02, 0.02, 0.02, 0.02 ],
 							"ScalingTarget": "Source",
-							"ScalingType": "MaxMana"
+							"ScalingType": "BonusMana"
 						}
 					]
 				}
