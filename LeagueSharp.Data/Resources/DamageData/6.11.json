@@ -1015,7 +1015,7 @@
 			{
 				"Stage": "Empowered",
 				"SpellData": {
-					"SpellEffectType": "Single",
+					"SpellEffectType": "None",
 					"DamageType": "Magical",
 					"Damages": [ 10, 40, 70, 100, 130 ],
 					"BonusDamages": [
@@ -4309,7 +4309,7 @@
 				"SpellData": {
 					"SpellEffectType": "AoE",
 					"DamageType": "Magical",
-					"Damages": [ 60, 100, 140, 170, 220 ],
+					"Damages": [ 60, 100, 140, 180, 220 ],
 					"BonusDamages": [
 						{
 							"DamageType": "Magical",
@@ -4350,6 +4350,22 @@
 						{
 							"DamageType": "Magical",
 							"DamagePercentages": [ 0.8, 0.8, 0.8 ],
+							"ScalingTarget": "Source",
+							"ScalingType": "AbilityPoints"
+						}
+					]
+				}
+			},
+			{
+				"Stage": "Empowered",
+				"SpellData": {
+					"SpellEffectType": "None",
+					"DamageType": "Magical",
+					"Damages": [ 30, 40, 50 ],
+					"BonusDamages": [
+						{
+							"DamageType": "Magical",
+							"DamagePercentages": [ 0.15, 0.15, 0.15 ],
 							"ScalingTarget": "Source",
 							"ScalingType": "AbilityPoints"
 						}
