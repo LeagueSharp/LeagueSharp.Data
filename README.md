@@ -1,6 +1,6 @@
 # LeagueSharp.Data
 
-LeagueSharp.Data is an SDK with APIs to easily retrieve Leaugue of Legends related data. Currently it supports:
+LeagueSharp.Data is an SDK with APIs to easily retrieve League of Legends related data. Currently it supports:
 
 * Champion Priorties
 * Damages
