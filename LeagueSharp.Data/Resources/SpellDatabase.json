@@ -25190,7 +25190,7 @@
 	"MissileMaxSpeed": 0,
 	"MissileMinSpeed": 0,
 	"MissileSpeed": 1000,
-	"MissileSpellName": "",
+	"MissileSpellName": "VayneCondemnMissile",
 	"ArcAngle": 0,
 	"RingRadius": 0,
 	"Radius": 100,
@@ -25203,7 +25203,7 @@
 		"Damage",
 		"CrowdControl"
 	],
-	"SpellType": "SkillshotLine",
+	"SpellType": "TargetedMissile",
 	"ToggleParticleName": "",
 	"Width": 50,
 	"MinChannelDuration": 0,
