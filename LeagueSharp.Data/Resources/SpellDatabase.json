@@ -2297,9 +2297,9 @@
 		"Knockup"
 	],
 	"AppliedBuffsOnSelf": null,
-	"AppliedBuffOnSelfName": null,
+	"AppliedBuffOnSelfName": "PowerFist",
 	"AppliedBuffOnAllyName": null,
-	"AppliedBuffOnEnemyName": "PowerFist",
+	"AppliedBuffOnEnemyName": null,
 	"AppliedBuffName": null,
 	"AvoidMaxRangeReduction": false,
 	"FixedRange": false,
@@ -5872,7 +5872,7 @@
 		"Slow"
 	],
 	"AppliedBuffsOnSelf": null,
-	"AppliedBuffOnSelfName": null,
+	"AppliedBuffOnSelfName": "FioraE",
 	"AppliedBuffOnAllyName": null,
 	"AppliedBuffOnEnemyName": null,
 	"AppliedBuffName": null,
@@ -9405,7 +9405,7 @@
 	"AppliedBuffsOnAllies": null,
 	"AppliedBuffsOnEnemies": null,
 	"AppliedBuffsOnSelf": null,
-	"AppliedBuffOnSelfName": null,
+	"AppliedBuffOnSelfName": "JaxEmpowerTwo",
 	"AppliedBuffOnAllyName": null,
 	"AppliedBuffOnEnemyName": null,
 	"AppliedBuffName": null,
@@ -21286,7 +21286,7 @@
 	"FixedRange": false,
 	"CanBeRemoved": false,
 	"CastType": [
-		"Position"
+		"Direction"
 	],
 	"ChampionName": "Sivir",
 	"CollisionObjects": [
@@ -21330,7 +21330,7 @@
 	"AppliedBuffsOnAllies": null,
 	"AppliedBuffsOnEnemies": null,
 	"AppliedBuffsOnSelf": null,
-	"AppliedBuffOnSelfName": null,
+	"AppliedBuffOnSelfName": "SivirWMarker",
 	"AppliedBuffOnAllyName": null,
 	"AppliedBuffOnEnemyName": null,
 	"AppliedBuffName": null,
