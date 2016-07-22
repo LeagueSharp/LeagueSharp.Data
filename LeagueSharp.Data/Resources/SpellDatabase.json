@@ -12857,7 +12857,7 @@
 		"Damage",
 		"CrowdControl"
 	],
-	"SpellType": "SkillshotLine",
+	"SpellType": "Targeted",
 	"ToggleParticleName": "",
 	"Width": 1200,
 	"MinChannelDuration": 0,
