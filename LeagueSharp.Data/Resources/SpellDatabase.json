@@ -4871,7 +4871,7 @@
 	"ResetsAutoAttackTimer": false,
 	"Slot": "Q",
 	"SourceObjectName": "",
-	"SpellName": "EliseSpiderQ",
+	"SpellName": "EliseSpiderQCast",
 	"SpellTags": [
 		"Damage",
 		"Dash"
