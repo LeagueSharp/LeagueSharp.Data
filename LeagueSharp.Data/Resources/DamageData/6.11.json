@@ -3979,6 +3979,96 @@
 			}
 		]
 	},
+	"Kled": {
+		"Q": [
+			{
+				"Stage": "Default",
+				"SpellData": {
+					"SpellEffectType": "Single",
+					"DamageType": "Physical",
+					"Damages": [ 25, 50, 75, 100, 125 ],
+					"BonusDamages": [
+						{
+							"DamageType": "Physical",
+							"DamagePercentages": [ 0.6, 0.6, 0.6, 0.6, 0.6 ],
+							"ScalingTarget": "Source",
+							"ScalingType": "BonusAttackDamage"
+						}
+					]
+				}
+			},
+			{
+				"Stage": "Detonation",
+				"SpellData": {
+					"SpellEffectType": "Single",
+					"DamageType": "Physical",
+					"Damages": [ 50, 100, 150, 200, 250 ],
+					"BonusDamages": [
+						{
+							"DamageType": "Physical",
+							"DamagePercentages": [ 1.2, 1.2, 1.2, 1.2, 1.2 ],
+							"ScalingTarget": "Source",
+							"ScalingType": "BonusAttackDamage"
+						}
+					]
+				}
+			},
+			{
+				"Stage": "SecondForm",
+				"SpellData": {
+					"SpellEffectType": "AoE",
+					"DamageType": "Physical",
+					"Damages": [ 30, 45, 60, 75, 90 ],
+					"BonusDamages": [
+						{
+							"DamageType": "Physical",
+							"DamagePercentages": [ 0.8, 0.8, 0.8, 0.8, 0.8 ],
+							"ScalingTarget": "Source",
+							"ScalingType": "BonusAttackDamage"
+						}
+					]
+				}
+			}
+		],
+		"W": [
+			{
+				"Stage": "Default",
+				"SpellData": {
+					"SpellEffectType": "None",
+					"DamageType": "Physical",
+					"Damages": [ 20, 30, 40, 50, 60 ],
+					"MaxDamageOnMinion": [ 200, 200, 200, 200, 200 ],
+					"BonusDamages": [
+						{
+							"DamageType": "Physical",
+							"DamagePercentages": [ 0.04, 0.05, 0.06, 0.07, 0.08 ],
+							"ScalePer100Ad": 0.05,
+							"ScalingTarget": "Target",
+							"ScalingType": "MaxHealth"
+						}
+					]
+				}
+			}
+		],
+		"E": [
+			{
+				"Stage": "Default",
+				"SpellData": {
+					"SpellEffectType": "AoE",
+					"DamageType": "Physical",
+					"Damages": [ 20, 45, 70, 95, 120 ],
+					"BonusDamages": [
+						{
+							"DamageType": "Physical",
+							"DamagePercentages": [ 0.6, 0.6, 0.6, 0.6, 0.6 ],
+							"ScalingTarget": "Source",
+							"ScalingType": "BonusAttackDamage"
+						}
+					]
+				}
+			}
+		]
+	},
 	"KogMaw": {
 		"Q": [
 			{
@@ -4010,7 +4100,7 @@
 						{
 							"DamageType": "Magical",
 							"DamagePercentages": [ 0.02, 0.02, 0.02, 0.02, 0.02 ],
-							"ScalePer100Ap": 0.0075,
+							"ScalePer100Ap": 0.075,
 							"ScalingTarget": "Target",
 							"ScalingType": "MaxHealth"
 						}
