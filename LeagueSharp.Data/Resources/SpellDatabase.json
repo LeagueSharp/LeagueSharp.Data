@@ -11975,7 +11975,7 @@
 		"Stasis",
 		"Heal"
 	],
-	"SpellType": "Targeted",
+	"SpellType": "SkillshotCircle",
 	"ToggleParticleName": "",
 	"Width": 50,
 	"MinChannelDuration": 0,
