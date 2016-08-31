@@ -2766,7 +2766,7 @@
 					"BonusDamages": [
 						{
 							"DamageType": "Physical",
-							"DamagePercentages": [ 0.6, 0.6, 0.6 ],
+							"DamagePercentages": [ 0.7, 0.7, 0.7 ],
 							"ScalingTarget": "Source",
 							"ScalingType": "BonusAttackPoints"
 						},
