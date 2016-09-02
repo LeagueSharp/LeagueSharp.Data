@@ -3992,7 +3992,7 @@
 							"DamageType": "Physical",
 							"DamagePercentages": [ 0.6, 0.6, 0.6, 0.6, 0.6 ],
 							"ScalingTarget": "Source",
-							"ScalingType": "BonusAttackDamage"
+							"ScalingType": "BonusAttackPoints"
 						}
 					]
 				}
@@ -4008,7 +4008,7 @@
 							"DamageType": "Physical",
 							"DamagePercentages": [ 1.2, 1.2, 1.2, 1.2, 1.2 ],
 							"ScalingTarget": "Source",
-							"ScalingType": "BonusAttackDamage"
+							"ScalingType": "BonusAttackPoints"
 						}
 					]
 				}
@@ -4024,7 +4024,7 @@
 							"DamageType": "Physical",
 							"DamagePercentages": [ 0.8, 0.8, 0.8, 0.8, 0.8 ],
 							"ScalingTarget": "Source",
-							"ScalingType": "BonusAttackDamage"
+							"ScalingType": "BonusAttackPoints"
 						}
 					]
 				}
@@ -4062,7 +4062,7 @@
 							"DamageType": "Physical",
 							"DamagePercentages": [ 0.6, 0.6, 0.6, 0.6, 0.6 ],
 							"ScalingTarget": "Source",
-							"ScalingType": "BonusAttackDamage"
+							"ScalingType": "BonusAttackPoints"
 						}
 					]
 				}
