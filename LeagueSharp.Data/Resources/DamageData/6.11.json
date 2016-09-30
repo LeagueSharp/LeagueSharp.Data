@@ -384,7 +384,7 @@
 				"SpellData": {
 					"SpellEffectType": "Single",
 					"DamageType": "Magical",
-					"Damages": [ 55, 85, 115, 145, 175 ],
+					"Damages": [ 50, 75, 100, 125, 150 ],
 					"BonusDamages": [
 						{
 							"DamageType": "Magical",
@@ -554,52 +554,6 @@
 						{
 							"DamageType": "Magical",
 							"DamagePercentages": [ 0.65, 0.65, 0.65, 0.65, 0.65 ],
-							"ScalingTarget": "Source",
-							"ScalingType": "AbilityPoints"
-						}
-					]
-				}
-			}
-		],
-		"W": [
-			{
-				"Stage": "Default",
-				"SpellData": {
-					"SpellEffectType": "AoE",
-					"DamageType": "Magical",
-					"DamagesPerLvl": [ 20, 22, 24, 26, 28, 31, 34, 37, 40, 45, 50, 55, 60, 67, 74, 81, 88, 97 ],
-					"BonusDamages": [
-						{
-							"DamageType": "Magical",
-							"Damages": [ 10, 20, 30, 40, 50 ],
-							"ScalingTarget": "Source",
-							"ScalingType": "AbilityPoints"
-						},
-						{
-							"DamageType": "Magical",
-							"DamagePercentages": [ 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35 ],
-							"ScalingTarget": "Source",
-							"ScalingType": "AbilityPoints"
-						}
-					]
-				}
-			},
-			{
-				"Stage": "Empowered",
-				"SpellData": {
-					"SpellEffectType": "AoE",
-					"DamageType": "Magical",
-					"DamagesPerLvl": [ 30, 33, 36, 39, 42, 46.5, 51, 55.5, 60, 67.5, 75, 82.5, 90, 100.5, 111, 121.5, 132, 142.5 ],
-					"BonusDamages": [
-						{
-							"DamageType": "Magical",
-							"Damages": [ 15, 30, 45, 60, 75 ],
-							"ScalingTarget": "Source",
-							"ScalingType": "AbilityPoints"
-						},
-						{
-							"DamageType": "Magical",
-							"DamagePercentages": [ 27, 28.5, 30, 31.5, 33, 34.5, 36, 37.5, 39, 40.5, 42, 43.5, 45, 46.5, 48, 49.5, 51, 52.5 ],
 							"ScalingTarget": "Source",
 							"ScalingType": "AbilityPoints"
 						}
@@ -4093,14 +4047,12 @@
 				"Stage": "Default",
 				"SpellData": {
 					"SpellEffectType": "None",
-					"DamageType": "Magical",
-					"Damages": [ 4, 8, 12, 16, 20 ],
-					"MaxDamageOnMinion": [ 60, 60, 60, 60, 60],
 					"BonusDamages": [
 						{
 							"DamageType": "Magical",
-							"DamagePercentages": [ 0.02, 0.02, 0.02, 0.02, 0.02 ],
-							"ScalePer100Ap": 0.075,
+							"DamagePercentages": [ 0.02, 0.03, 0.04, 0.05, 0.06 ],
+							"ScalePer100Ap": 0.01,
+							"MaxDamageOnMinion": [ 100, 100, 100, 100, 100],
 							"ScalingTarget": "Target",
 							"ScalingType": "MaxHealth"
 						}
@@ -8008,7 +7960,7 @@
 				"SpellData": {
 					"SpellEffectType": "AoE",
 					"DamageType": "Magical",
-					"Damages": [ 20, 60, 95, 130, 165 ],
+					"Damages": [ 40, 80, 120, 160, 200 ],
 					"BonusDamages": [
 						{
 							"DamageType": "Magical",
