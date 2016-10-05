@@ -497,7 +497,7 @@
 						{
 							"IsModifiedDamage": true,
 							"DamageType": "Physical",
-							"DamagePercentages": [ 1.15, 1.2, 1.25, 1.3, 1.35 ],
+							"DamagePercentages": [ 1.05, 1.1, 1.15, 1.2, 1.25 ],
 							"ScalingTarget": "Source",
 							"ScalingType": "AttackPoints"
 						}
@@ -3196,7 +3196,7 @@
 				"SpellData": {
 					"SpellEffectType": "AoE",
 					"DamageType": "Magical",
-					"Damages": [ 80, 135, 190, 245, 300 ],
+					"Damages": [ 70, 120, 170, 220, 270 ],
 					"BonusDamages": [
 						{
 							"DamageType": "Magical",
@@ -8605,13 +8605,13 @@
 					"BonusDamages": [
 						{
 							"DamageType": "Magical",
-							"DamagePercentages": [ 0.1, 0.1, 0.1, 0.1, 0.1 ],
+							"DamagePercentages": [ 0.06, 0.06, 0.06, 0.06, 0.06 ],
 							"ScalingTarget": "Source",
 							"ScalingType": "MaxHealth"
 						},
 						{
 							"DamageType": "Magical",
-							"DamagePercentages": [ 0.7, 0.7, 0.7, 0.7, 0.7 ],
+							"DamagePercentages": [ 1, 1, 1, 1, 1 ],
 							"ScalingTarget": "Source",
 							"ScalingType": "AbilityPoints"
 						}
